@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+        <variable
+            name="model"
+            type="com.hdev.common.datamodels.Users" />
+
+    </data>
+
+<androidx.cardview.widget.CardView
+    android:layout_marginTop="5dp"
+    android:clickable="true"
+    android:focusable="true"
+    android:background="?selectableItemBackground"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_margin="5dp"
+        android:id="@+id/root"
+        android:layout_height="wrap_content">
+
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="80dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_height="80dp"
+        android:id="@+id/imageView"
+        loadUserImage="@{model.email}"
+        />
+
+        <TextView
+            android:padding="10dp"
+            android:gravity="center"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginEnd="5dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:id="@+id/options"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:text="&#8942;"
+            android:textAppearance="?android:textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:text="@{model.name}"
+            android:ellipsize="end"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:singleLine="true"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/options"
+            app:layout_constraintStart_toEndOf="@id/imageView"
+            android:layout_width="0dp"
+            android:layout_marginHorizontal="10dp"
+            android:layout_height="wrap_content"/>
+
+        <br.com.simplepass.loadingbutton.customViews.CircularProgressButton
+            android:layout_marginHorizontal="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/imageView"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="0dp"
+            android:visibility="gone"
+            app:spinning_bar_width="4dp"
+            app:spinning_bar_color="#FFF"
+            app:spinning_bar_padding="6dp"
+            android:layout_height="30dp"
+            app:layout_constraintTop_toBottomOf="@id/textView"
+            android:text="Watch Video CV"
+            android:id="@+id/button_job"
+            android:textColor="@color/white"
+            android:background="@drawable/go_live_button"
+            buttonClick="@{model.username}"
+            />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.cardview.widget.CardView>
+</layout>

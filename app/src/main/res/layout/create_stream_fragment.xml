@@ -1,0 +1,505 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:theme="@style/Material">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/primary"
+            app:layout_constraintTop_toTopOf="parent"
+            app:navigationIcon="@drawable/ic_arrow_back_white"
+            app:subtitleTextColor="@color/white"
+            app:title="Create Live Stream"
+            app:titleTextColor="@color/white" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/inputlayout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="10dp"
+            android:hint="Title"
+            app:boxStrokeColor="@color/primary"
+            app:hintAnimationEnabled="true"
+            app:hintTextColor="@color/primary"
+            app:layout_constraintTop_toBottomOf="@id/toolbar">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLength="20"
+                android:singleLine="true" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <CheckBox
+            android:id="@+id/isVideoLink"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Wanted"
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="@id/radiogroup"
+            app:layout_constraintTop_toBottomOf="@id/radiogroup"
+            app:layout_constraintVertical_bias="0.4" />
+
+        <EditText
+            android:id="@+id/jobDes"
+            android:layout_width="200dp"
+            android:layout_height="41dp"
+            android:hint="URL"
+            android:visibility="gone"
+            app:layout_constraintBottom_toTopOf="@+id/tagsView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/isVideoLink"
+            app:layout_constraintTop_toBottomOf="@+id/radiogroup"
+            app:layout_constraintVertical_bias="0.55" />
+
+        <com.greenfrvr.hashtagview.HashtagView
+            android:id="@+id/tagsView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            app:composeMode="linear"
+            app:layout_constraintEnd_toEndOf="@id/inputlayout"
+            app:layout_constraintStart_toStartOf="@id/inputlayout"
+            app:layout_constraintTop_toBottomOf="@id/isVideoLink"
+            app:rowDistribution="none"
+            app:rowGravity="left"
+            app:selectionMode="true"
+            app:tagBackground="@drawable/ripple"
+            app:tagPaddingLeft="10dp"
+            app:tagPaddingRight="10dp"
+            app:tagTextColor="@color/white" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:background="#4D000000"
+            app:layout_constraintTop_toBottomOf="@id/tagsView"
+            tools:ignore="MissingConstraints" />
+
+        <RadioButton
+            android:id="@+id/rg_apply_on_video"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:checked="true"
+            android:text="Apply with video"
+            app:layout_constraintStart_toStartOf="@id/inputlayout"
+            app:layout_constraintTop_toBottomOf="@id/tagsView" />
+
+        <RadioButton
+            android:id="@+id/rg_apply_on_jobsite"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            app:layout_constraintStart_toStartOf="@id/inputlayout"
+            app:layout_constraintTop_toBottomOf="@id/rg_apply_on_video" />
+        <EditText
+            android:id="@+id/jobSite_link"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_40sdp"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:hint="Apply on Jobsite"
+            android:inputType="text"
+            android:textSize="@dimen/_11sdp"
+            app:layout_constraintEnd_toEndOf="@+id/rg_apply_on_jobsite"
+            app:layout_constraintStart_toStartOf="@+id/rg_apply_on_jobsite"
+            app:layout_constraintTop_toTopOf="@+id/rg_apply_on_jobsite"
+            app:layout_constraintBottom_toBottomOf="@+id/rg_apply_on_jobsite"/>
+
+        <View
+            android:id="@+id/jobSiteView"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="@+id/jobSite_link"
+            app:layout_constraintStart_toStartOf="@+id/jobSite_link"
+            app:layout_constraintTop_toTopOf="@+id/jobSite_link"
+            app:layout_constraintBottom_toBottomOf="@+id/jobSite_link" />
+        <View
+            android:id="@+id/linetwo"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:background="#4D000000"
+            app:layout_constraintTop_toBottomOf="@id/rg_apply_on_jobsite"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/tv_notify"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:text="How would you like job hunter to contact you ?"
+            app:layout_constraintStart_toStartOf="@id/inputlayout"
+            app:layout_constraintTop_toBottomOf="@+id/linetwo" />
+
+        <RadioButton
+            android:id="@+id/messages_only"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:checked="true"
+            android:text="Message only"
+            app:layout_constraintStart_toStartOf="@+id/inputlayout"
+            app:layout_constraintTop_toBottomOf="@id/tv_notify" />
+
+        <RadioButton
+            android:id="@+id/call_only"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="Call only"
+            app:layout_constraintStart_toStartOf="@+id/inputlayout"
+            app:layout_constraintTop_toBottomOf="@id/messages_only" />
+
+        <RadioButton
+            android:id="@+id/both_msg_call"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="Both message and call"
+            app:layout_constraintStart_toStartOf="@+id/inputlayout"
+            app:layout_constraintTop_toBottomOf="@id/call_only" />
+        <Button
+            android:id="@+id/btn_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/go_live_button"
+            android:elevation="10dp"
+            android:paddingHorizontal="10dp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:text="Select Location"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/inputlayout"
+            app:layout_constraintTop_toBottomOf="@id/both_msg_call"/>
+        <TextView
+            android:id="@+id/cityName"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:textStyle="bold"
+            android:maxLines="3"
+            android:textSize="12sp"
+            android:visibility="visible"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toEndOf="@+id/btn_location"
+            app:layout_constraintTop_toTopOf="@+id/btn_location"
+            app:layout_constraintBottom_toBottomOf="@+id/btn_location"
+            app:layout_constraintEnd_toEndOf="parent"/>
+        <TextView
+            android:id="@+id/textview6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Preferred Camera Position"
+            android:textSize="@dimen/_13ssp"
+            app:layout_constraintStart_toStartOf="@id/inputlayout"
+            app:layout_constraintTop_toBottomOf="@id/inputlayout" />
+
+        <RadioGroup
+            android:id="@+id/radiogroup"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toTopOf="@id/textView5"
+            app:layout_constraintEnd_toEndOf="@id/inputlayout"
+            app:layout_constraintStart_toStartOf="@id/inputlayout"
+            app:layout_constraintTop_toBottomOf="@id/textview6"
+            app:layout_constraintVertical_bias="0.08">
+
+
+            <RadioButton
+                android:id="@+id/check_front_camera"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:text="Front"
+                app:layout_constraintEnd_toStartOf="@id/check_rear_camera"
+                app:layout_constraintHorizontal_chainStyle="spread"
+                app:layout_constraintHorizontal_weight="0.3"
+                app:layout_constraintVertical_bias="0.05" />
+
+            <RadioButton
+                android:id="@+id/check_rear_camera"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:checked="true"
+                android:text="Rear"
+                app:layout_constraintBottom_toTopOf="@id/textView5"
+                app:layout_constraintEnd_toEndOf="@id/inputlayout"
+                app:layout_constraintHorizontal_weight="0.3"
+                app:layout_constraintStart_toEndOf="@id/check_front_camera"
+                app:layout_constraintTop_toBottomOf="@id/textview6"
+                app:layout_constraintVertical_bias="0.1" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/btn_live"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:background="@drawable/go_live_button"
+            android:text="GO LIVE"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/imageView7"
+            app:layout_constraintStart_toStartOf="@+id/imageView7"
+            app:layout_constraintTop_toTopOf="@+id/guideline15" />
+
+
+        <RelativeLayout
+            android:id="@+id/rl_linkedin"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/icons_oval"
+            app:layout_constraintBottom_toBottomOf="@+id/guideline_im"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/guideline9">
+
+
+            <ImageView
+                android:id="@+id/iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:alpha="0.6"
+                android:src="@drawable/in_cirlceview3x" />
+
+            <ImageView
+                android:id="@+id/check_linkedin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@id/iv"
+                android:src="@drawable/greentick_filled3x"
+                android:visibility="invisible" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_twitter"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/icons_oval"
+            app:layout_constraintBottom_toBottomOf="@+id/guideline_im"
+            app:layout_constraintEnd_toStartOf="@+id/rl_linkedin"
+            app:layout_constraintTop_toTopOf="@+id/guideline9">
+
+            <ImageView
+                android:id="@+id/iv2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:alpha="0.6"
+                android:src="@drawable/twitterimage3" />
+
+            <ImageView
+                android:id="@+id/check_twitter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@id/iv2"
+                android:src="@drawable/greentick_filled3x"
+                android:visibility="invisible" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_Facebook"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/icons_oval"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="@+id/guideline_im"
+            app:layout_constraintEnd_toStartOf="@+id/rl_twitter"
+            app:layout_constraintTop_toTopOf="@+id/guideline9">
+
+            <ImageView
+                android:id="@+id/iv3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:alpha="0.6"
+                android:src="@drawable/f_cirlceview3x" />
+
+            <ImageView
+                android:id="@+id/check_facebook"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@id/iv3"
+                android:src="@drawable/greentick_filled3x"
+                android:visibility="invisible" />
+        </RelativeLayout>
+
+
+        <CheckBox
+            android:id="@+id/checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:checked="true"
+            app:layout_constraintBottom_toTopOf="@+id/guideline16"
+            app:layout_constraintDimensionRatio="1:0.8"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/inputlayout"
+            app:layout_constraintTop_toTopOf="@+id/guideline10" />
+
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline8"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintBottom_toTopOf="@+id/btn_live"
+            app:layout_constraintStart_toStartOf="@+id/guideline7"
+            app:layout_constraintTop_toTopOf="@+id/guideline5"
+            app:srcCompat="@drawable/spacecraft" />
+
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="5dp"
+            android:autoSizeTextType="uniform"
+            android:gravity="center_vertical"
+            android:text="Disable Comments?"
+            android:textColor="@color/Black"
+            app:layout_constraintBottom_toBottomOf="@+id/checkbox"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.036"
+            app:layout_constraintStart_toEndOf="@+id/checkbox"
+            app:layout_constraintTop_toTopOf="@+id/checkbox"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/share_preview_on"
+            android:textColor="@color/Black"
+            android:textSize="@dimen/_12ssp"
+            app:layout_constraintBottom_toBottomOf="@id/guideline_im"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/checkbox"
+            app:layout_constraintTop_toTopOf="@+id/guideline9" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Ready for Lift Off?"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/_14ssp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/guideline12" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.79" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.31" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.7" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.54" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_im"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.60" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.42" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.21" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.79" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.08891929" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.8427896" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.47" />
+
+        <androidx.constraintlayout.widget.Group
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:constraint_referenced_ids="rl_Facebook,rl_linkedin,rl_twitter,checkbox,textView3,textView4" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

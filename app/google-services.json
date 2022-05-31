@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "544681831948",
+    "firebase_url": "https://simx-254005.firebaseio.com",
+    "project_id": "simx-254005",
+    "storage_bucket": "simx-254005.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:544681831948:android:3fe7250504496be5cd0829",
+        "android_client_info": {
+          "package_name": "com.senarios.simx"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "544681831948-psmjkntigju9e84bct95vkiovj0a0duh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD9qUoofrnr1qh83PN4xa4LFc97ZGQCxOw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "544681831948-psmjkntigju9e84bct95vkiovj0a0duh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:544681831948:android:ab46c41c1908634acd0829",
+        "android_client_info": {
+          "package_name": "com.senarios.simxx"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "544681831948-psmjkntigju9e84bct95vkiovj0a0duh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD9qUoofrnr1qh83PN4xa4LFc97ZGQCxOw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "544681831948-psmjkntigju9e84bct95vkiovj0a0duh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

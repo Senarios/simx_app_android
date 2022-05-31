@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+<data>
+
+</data>
+
+    <RelativeLayout
+        android:paddingVertical="10dp"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_arrow_back"
+            android:id="@+id/navigation"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_toRightOf="@id/navigation"
+            android:src="@drawable/boy_profilepic3x"
+            android:layout_marginStart="10dp"
+            android:id="@+id/profile_picture"
+            android:layout_width="50dp"
+            android:layout_height="50dp"/>
+
+        <TextView
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/profile_picture"
+            android:layout_gravity="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textStyle="bold"
+            android:layout_toLeftOf="@id/phone"
+            android:layout_marginStart="10dp"
+            android:text="Hashim"
+            android:fontFamily="@font/roboto"
+            android:textColor="@color/black"
+            android:id="@+id/name"
+            android:ellipsize="end"
+            android:maxLength="30"
+            android:singleLine="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+        <ImageView
+            android:id="@+id/phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="start"
+            android:layout_marginEnd="10dp"
+            android:layout_toLeftOf="@id/info"
+            android:background="@drawable/circular_ripple"
+            android:padding="5dp"
+            android:src="@drawable/ic_phone" />
+
+        <ImageView
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/circular_ripple"
+            android:padding="5dp"
+            android:id="@+id/info"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_info_24"
+            />
+
+    </RelativeLayout>
+
+</layout>

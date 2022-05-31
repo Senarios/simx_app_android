@@ -1,0 +1,427 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <com.chauthai.swipereveallayout.SwipeRevealLayout
+        android:id="@+id/root"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5sp"
+        android:layout_marginTop="5sp"
+        android:layout_marginRight="5sp"
+        android:layout_marginBottom="5sp"
+        android:elevation="5dp"
+        app:dragEdge="right"
+        app:mode="normal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/JobButton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/ripple_original"
+                android:gravity="center"
+                android:padding="10dp"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardElevation="@dimen/_5sdp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/_5sdp"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:focusable="true">
+
+                <View
+                    android:id="@+id/view"
+                    android:layout_width="100dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/corner"
+                    android:scaleX="-1"
+                    android:scaleY="-1"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/jobtv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="13dp"
+                    android:rotation="45"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:text="Job"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_10sdp"
+                    android:textStyle="bold"
+                    android:visibility="visible"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/jobtv2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="14dp"
+                    android:rotation="45"
+                    android:text="wanted"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_11ssp"
+                    android:textStyle="bold"
+                    android:visibility="gone"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+                <ProgressBar
+                    android:id="@+id/progress_bar"
+                    android:layout_width="0dp"
+                    android:layout_height="150dp"
+                    android:padding="40dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintDimensionRatio="1:1.2"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0" />
+
+                <ImageView
+                    android:id="@+id/image"
+                    android:layout_width="0dp"
+                    android:layout_height="150dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/h2pay2"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintDimensionRatio="1:1.2"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0" />
+
+                <ImageView
+                    android:id="@+id/viewers_imagee"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/doctor_name"
+                    app:layout_constraintTop_toBottomOf="@+id/user_type"
+                    app:layout_constraintVertical_bias="0.1"
+                    app:srcCompat="@drawable/group_icon_" />
+
+                <com.greenfrvr.hashtagview.HashtagView
+                    android:id="@+id/tagsView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    app:composeMode="linear"
+                    app:layout_constraintEnd_toEndOf="@id/name"
+                    app:layout_constraintStart_toStartOf="@id/name"
+                    app:layout_constraintTop_toBottomOf="@id/rate_layout"
+                    app:rowDistribution="none"
+                    app:rowGravity="left"
+                    app:selectionMode="true"
+                    app:tagBackground="@drawable/ripple"
+                    app:tagEllipsize="end"
+                    app:tagPaddingLeft="10dp"
+                    app:tagPaddingRight="10dp"
+                    app:tagTextColor="@color/white"
+                    app:tagTextSize="@dimen/_8ssp"
+
+                    />
+
+                <br.com.simplepass.loadingbutton.customViews.CircularProgressButton
+                    android:id="@+id/button_job"
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:layout_marginHorizontal="10dp"
+                    android:background="@drawable/go_live_button"
+                    android:text="Apply"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:visibility="gone"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/image"
+                    app:layout_constraintTop_toBottomOf="@id/tagsView"
+                    app:spinning_bar_color="#FFF"
+                    app:spinning_bar_padding="6dp"
+                    app:spinning_bar_width="4dp" />
+
+                <TextView
+                    android:id="@+id/doctor_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="5dp"
+                    android:background="@drawable/round_backgroud_rate"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/_5sdp"
+                    android:paddingTop="1dp"
+                    android:elevation="@dimen/_2sdp"
+                    android:paddingRight="@dimen/_5sdp"
+                    android:singleLine="true"
+                    android:text="Contact mee"
+                    android:textColor="@color/Black"
+                    android:textSize="@dimen/_8ssp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="@+id/name"
+                    app:layout_constraintHorizontal_bias="0.045"
+                    app:layout_constraintStart_toStartOf="@+id/name"
+                    app:layout_constraintTop_toTopOf="@+id/guideline6" />
+
+                <TextView
+                    android:id="@+id/swipeToapply"
+                    android:layout_width="215dp"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="5sp"
+                    android:layout_marginEnd="5dp"
+                    android:ellipsize="end"
+                    android:gravity="right"
+                    android:paddingTop="1dp"
+                    android:singleLine="true"
+                    android:text="Swipe             "
+                    android:textColor="@color/Black"
+                    android:textSize="@dimen/_8ssp"
+                    android:visibility="gone"
+                    app:layout_constraintEnd_toEndOf="@id/name"
+                    app:layout_constraintStart_toStartOf="@id/name"
+                    app:layout_constraintTop_toBottomOf="@id/doctor_name" />
+
+                <TextView
+                    android:id="@+id/user_type"
+                    android:layout_width="245dp"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="1dp"
+                    android:singleLine="true"
+                    android:textColor="@color/primary"
+                    android:textSize="@dimen/_8ssp"
+                    android:visibility="invisible"
+                    app:layout_constraintEnd_toEndOf="@id/name"
+                    app:layout_constraintStart_toStartOf="@id/name"
+                    app:layout_constraintTop_toBottomOf="@id/doctor_name" />
+
+                <LinearLayout
+                  android:id="@+id/rate_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:background="@drawable/round_backgroud_rate"
+                    android:elevation="@dimen/_2sdp"
+                    android:visibility="invisible"
+                    app:layout_constraintStart_toStartOf="@id/doctor_name"
+                    app:layout_constraintTop_toBottomOf="@id/user_type">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:layout_marginTop="1dp"
+                        android:gravity="center"
+                        android:paddingLeft="@dimen/_5sdp"
+                        android:paddingRight="@dimen/_3sdp"
+                        android:singleLine="true"
+                        android:text="Rate of call: £"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_7ssp"
+                        android:visibility="visible"
+                        app:layout_constraintStart_toStartOf="@id/doctor_name"
+                        app:layout_constraintTop_toBottomOf="@id/user_type" />
+                    <TextView
+                        android:id="@+id/rate_of_call"
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:layout_marginTop="1dp"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:textColor="@color/Green"
+                        android:textSize="@dimen/_7ssp"
+                        android:visibility="visible"
+                        app:layout_constraintStart_toStartOf="@id/doctor_name"
+                        app:layout_constraintTop_toBottomOf="@id/user_type" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:layout_marginTop="1dp"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:text="/h"
+                        android:paddingRight="@dimen/_3sdp"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_7ssp"
+                        android:visibility="visible"
+                        app:layout_constraintStart_toStartOf="@id/doctor_name"
+                        app:layout_constraintTop_toBottomOf="@id/user_type" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:maxLines="2"
+                    android:text="@string/startup_partner_wanted"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/_10ssp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toStartOf="@+id/view"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toEndOf="@+id/image"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/jobDes"
+                    android:layout_width="@dimen/_100sdp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="@dimen/_7sdp"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginRight="@dimen/_20sdp"
+                    android:autoLink="web"
+                    android:hint=""
+                    android:singleLine="true"
+                    android:maxLines="1"
+                    app:layout_constraintBottom_toTopOf="@+id/doctor_name"
+                    app:layout_constraintEnd_toStartOf="@+id/share_button"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toEndOf="@+id/circle_profile_picture"
+                    app:layout_constraintTop_toBottomOf="@+id/name"
+                    app:layout_constraintVertical_bias="0.0" />
+
+                <androidx.constraintlayout.widget.Group
+                    android:id="@+id/group"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    app:constraint_referenced_ids="view,jobtv" />
+
+                <TextView
+                    android:id="@+id/Viewers"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:text="Viewers: "
+                    android:textColor="@color/Black"
+                    android:textSize="@dimen/_8ssp"
+                    app:layout_constraintBottom_toBottomOf="@+id/viewers_imagee"
+                    app:layout_constraintStart_toEndOf="@+id/viewers_imagee"
+                    app:layout_constraintTop_toTopOf="@+id/viewers_imagee" />
+
+                <TextView
+                    android:id="@+id/viewers_number"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:text="18"
+                    android:textColor="@color/Black"
+                    android:textSize="@dimen/_8ssp"
+                    android:visibility="visible"
+                    app:layout_constraintBottom_toBottomOf="@+id/Viewers"
+                    app:layout_constraintStart_toEndOf="@+id/Viewers"
+                    app:layout_constraintTop_toTopOf="@+id/Viewers" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintGuide_begin="46dp" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/circle_profile_picture"
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_marginEnd="4dp"
+                    android:src="@drawable/notifications_tab_unselectedicon_"
+                    android:visibility="gone"
+                    app:layout_constraintDimensionRatio="1:1.4"
+                    app:layout_constraintEnd_toStartOf="@+id/name"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/name"
+                    app:layout_constraintVertical_bias="0.0">
+
+                </de.hdodenhof.circleimageview.CircleImageView>
+
+                <ImageView
+                    android:id="@+id/share_button"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_marginEnd="4dp"
+                    android:src="@drawable/sharelightblueicon"
+                    android:visibility="gone"
+                    app:layout_constraintBottom_toTopOf="@+id/Viewers"
+                    app:layout_constraintDimensionRatio="1:0.8"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/guideline20"
+                    app:layout_constraintTop_toTopOf="@+id/doctor_name"
+                    app:layout_constraintVertical_bias="0.157" />
+
+                <ImageView
+                    android:id="@+id/delete_button"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/delete_icon"
+                    android:visibility="gone"
+                    app:layout_constraintBottom_toBottomOf="@+id/viewers_number"
+                    app:layout_constraintDimensionRatio="1:0.8"
+                    app:layout_constraintEnd_toEndOf="@+id/share_button"
+                    app:layout_constraintStart_toStartOf="@+id/share_button"
+                    app:layout_constraintTop_toBottomOf="@+id/share_button" />
+
+                <androidx.constraintlayout.widget.Group
+                    android:id="@+id/viewer_group"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    app:constraint_referenced_ids="viewers_imagee,viewers_number,Viewers" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.85" />
+
+                <TextView
+                    android:id="@+id/viewers_numbers"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_eye"
+                    android:drawablePadding="@dimen/_5ssp"
+                    android:fontFamily="@font/roboto_light"
+                    android:gravity="center_vertical"
+                    android:text="20k"
+                    android:textSize="@dimen/_9sdp"
+                    android:visibility="gone"
+                    app:layout_constraintHorizontal_chainStyle="packed"
+                    app:layout_constraintStart_toEndOf="@+id/guideline"
+                    app:layout_constraintTop_toBottomOf="@+id/user_type" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </androidx.cardview.widget.CardView>
+    </com.chauthai.swipereveallayout.SwipeRevealLayout>
+
+</layout>

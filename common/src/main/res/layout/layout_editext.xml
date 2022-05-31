@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<data>
+
+</data>
+    <RelativeLayout
+        android:theme="@style/Theme.MaterialComponents.Light.NoActionBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/inputlayout"
+            app:boxStrokeColor="@color/primary"
+            android:layout_width="match_parent"
+            android:layout_marginHorizontal="20dp"
+            app:hintAnimationEnabled="true"
+            android:hint="Tag"
+            app:hintTextColor="@color/primary"
+            android:layout_marginTop="10dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et"
+                android:singleLine="true"
+                android:maxLength="20"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+    </RelativeLayout>
+</layout>

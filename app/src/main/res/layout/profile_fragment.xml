@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="user"
+            type="com.hdev.common.datamodels.Users" />
+
+        <variable
+            name="followers"
+            type="String" />
+
+        <variable
+            name="following"
+            type="String" />
+
+        <variable
+            name="broadcasts"
+            type="String" />
+
+
+    </data>
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipe"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <androidx.coordinatorlayout.widget.CoordinatorLayout
+            android:id="@+id/root"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <com.google.android.material.appbar.AppBarLayout
+                android:id="@+id/appbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/transparent"
+                android:fitsSystemWindows="true"
+                android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+                <com.google.android.material.appbar.CollapsingToolbarLayout
+                    android:id="@+id/collapsing_toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fitsSystemWindows="true"
+                    app:contentScrim="?attr/colorPrimary"
+                    app:layout_scrollFlags="scroll|exitUntilCollapsed|snap">
+
+                    <RelativeLayout
+                        android:id="@+id/Top_Layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_10ssp"
+                        android:background="@color/white"
+                        android:elevation="@dimen/_5ssp"
+                        android:padding="@dimen/_10ssp">
+
+                        <TextView
+                            android:id="@+id/block_btn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_margin="@dimen/_2ssp"
+                            android:drawableLeft="@drawable/ic_minus"
+                            android:drawablePadding="@dimen/_7ssp"
+                            android:fontFamily="@font/roboto"
+                            android:gravity="center"
+                            android:text="Block user"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_7ssp" />
+
+                        <ImageView
+                            android:id="@+id/back_btn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_margin="@dimen/_2ssp"
+                            android:background="?attr/selectableItemBackgroundBorderless"
+                            android:src="@drawable/ic_arrow_back" />
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/Profile_picture"
+                            loadUserImage="@{user.email}"
+                            android:layout_width="@dimen/_100ssp"
+                            android:layout_height="@dimen/_100ssp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginTop="@dimen/_15ssp"
+                            android:layout_marginBottom="10dp"
+                            android:paddingBottom="@dimen/_5ssp"
+                            android:src="@drawable/h2pay2"
+                            app:civ_border_color="@color/black"
+                            app:civ_border_width="1dp" />
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/iv_linkedin"
+                            android:layout_width="@dimen/_17ssp"
+                            android:layout_height="@dimen/_17ssp"
+                            android:layout_alignStart="@id/Profile_picture"
+                            android:layout_alignBottom="@id/Profile_picture"
+                            android:layout_marginLeft="@dimen/_43ssp"
+                            android:layout_marginTop="@dimen/_2ssp"
+                            android:src="@drawable/in_icon3x" />
+
+                        <TextView
+                            android:id="@+id/Name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/Profile_picture"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="@dimen/_12ssp"
+                            android:fontFamily="@font/roboto_light"
+                            android:maxLines="1"
+                            android:singleLine="true"
+                            android:text="@{user.name}"
+                            android:textColor="@color/dark_blue"
+                            android:textSize="@dimen/_12ssp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/Type"
+                            settext="@{user.skills}"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/Name"
+                            android:layout_centerHorizontal="true"
+                            android:fontFamily="@font/roboto_light"
+                            android:singleLine="true"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_10ssp"
+                            android:visibility="gone" />
+
+                        <LinearLayout
+                            android:id="@+id/rating_layout"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/Type"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:layout_marginBottom="@dimen/_5sdp"
+                            android:background="?attr/selectableItemBackground"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <RatingBar
+                                android:id="@+id/ratingBar"
+                                style="?android:attr/ratingBarStyleSmall"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:numStars="5"
+                                android:rating="0"
+                                android:stepSize="0.5"
+                                android:theme="@style/RatingBar" />
+
+                            <TextView
+                                android:id="@+id/rating_text"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="0.0(0)"
+                                android:textColor="@color/text_color_black" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/poundLayout"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/rating_layout"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:background="@drawable/round_backgroud_rate"
+                            android:elevation="@dimen/_4ssp"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:padding="@dimen/_3ssp"
+                            android:visibility="invisible">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_5ssp"
+                                android:fontFamily="@font/roboto_light"
+                                android:text="Hourly rate : "
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_10ssp"
+                                android:visibility="visible" />
+
+                            <ImageView
+                                android:id="@+id/pound"
+                                android:layout_width="@dimen/_12ssp"
+                                android:layout_height="@dimen/_12ssp"
+                                android:layout_marginLeft="@dimen/_5ssp"
+                                android:src="@drawable/pound"
+                                android:visibility="visible"
+                                app:tint="@color/greenJ" />
+
+                            <TextView
+                                android:id="@+id/rate_of_call"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="@dimen/_5ssp"
+                                android:fontFamily="@font/roboto_light"
+                                android:text="@{ user.rate}"
+                                android:textColor="@color/greenJ"
+                                android:textSize="@dimen/_11ssp"
+                                android:textStyle="bold"
+                                android:visibility="visible" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/poundLayout"
+                            android:layout_marginLeft="@dimen/_10ssp"
+                            android:layout_marginTop="@dimen/_30ssp"
+                            android:layout_marginRight="@dimen/_10ssp"
+                            android:layout_marginBottom="@dimen/_10ssp"
+                            android:orientation="horizontal"
+                            android:weightSum="3">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center_horizontal"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/followers_number"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/roboto_light"
+                                    android:text="@{followers}"
+                                    android:textColor="@color/dark_blue"
+                                    android:textSize="@dimen/_15ssp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/_5ssp"
+                                    android:fontFamily="@font/roboto_light"
+                                    android:text="Followers"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/_10ssp" />
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="1dp"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center_vertical"
+                                android:background="@color/DimGray" />
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center_horizontal"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/following_number"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/roboto_light"
+                                    android:text="@{following}"
+                                    android:textColor="@color/dark_blue"
+                                    android:textSize="@dimen/_15ssp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/_5ssp"
+                                    android:fontFamily="@font/roboto_light"
+                                    android:text="Following"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/_10ssp" />
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="1dp"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center_vertical"
+                                android:background="@color/DimGray" />
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center_horizontal"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/broadcasts_number"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/roboto_light"
+                                    android:text="@{broadcasts}"
+                                    android:textColor="@color/dark_blue"
+                                    android:textSize="@dimen/_15ssp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/_5ssp"
+                                    android:fontFamily="@font/roboto_light"
+                                    android:text="Broadcasts"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/_10ssp" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </RelativeLayout>
+
+
+                </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+                <LinearLayout
+                    android:id="@+id/action_buttons"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/transparent"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="12dp"
+                    android:weightSum="3"
+                    app:layout_scrollFlags="scroll">
+
+                    <Button
+                        android:id="@+id/follow_button"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/_25ssp"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_weight="1"
+                        android:background="@drawable/edit_profile_button"
+                        android:clickable="false"
+                        android:fontFamily="@font/roboto"
+                        android:text="Follow"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        app:layout_constraintBottom_toTopOf="@+id/bottom_textview_guideline"
+                        app:layout_constraintEnd_toStartOf="@+id/guideline4"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/button_panel"
+                        app:layout_constraintVertical_bias="0.0" />
+
+                    <Button
+                        android:id="@+id/message_button"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/_25ssp"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_weight="1"
+                        android:background="@drawable/edit_profile_button"
+                        android:fontFamily="@font/roboto"
+                        android:text="Message"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        app:layout_constraintBottom_toTopOf="@+id/bottom_textview_guideline"
+                        app:layout_constraintEnd_toStartOf="@+id/guideline13"
+                        app:layout_constraintStart_toStartOf="@+id/guideline4"
+                        app:layout_constraintTop_toTopOf="@+id/button_panel"
+                        app:layout_constraintVertical_bias="0.0" />
+
+                    <Button
+                        android:id="@+id/appointment_button"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/_25ssp"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:layout_weight="1"
+                        android:background="@drawable/edit_profile_button"
+                        android:fontFamily="@font/roboto"
+                        android:singleLine="true"
+                        android:text="Appointment"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        app:layout_constraintBottom_toTopOf="@+id/bottom_textview_guideline"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="@+id/guideline13"
+                        app:layout_constraintTop_toTopOf="@+id/button_panel"
+                        app:layout_constraintVertical_bias="0.9" />
+
+                </LinearLayout>
+
+            </com.google.android.material.appbar.AppBarLayout>
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rc_for_broadcasts"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/call_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end|bottom"
+                android:layout_margin="20dp"
+                android:backgroundTint="@color/Green"
+                android:clickable="true"
+                android:focusable="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_call"
+                android:visibility="visible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.954"
+                app:layout_constraintStart_toStartOf="parent"
+                app:maxImageSize="56dp">
+
+            </com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+</layout>

@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Projects/SimXandroid/SimX/app/src/main/res/drawable/messages_selected.xml" value="0.105" />
+        <entry key="..\:/Projects/SimXandroid/SimX/app/src/main/res/drawable/profile_fragment_title_bg.xml" value="0.105" />
+        <entry key="..\:/Projects/SimXandroid/SimX/app/src/main/res/layout/activity_create_offline_stream.xml" value="0.2" />
+        <entry key="..\:/Projects/SimXandroid/SimX/app/src/main/res/layout/activity_pic_location.xml" value="0.2028985507246377" />
+        <entry key="..\:/Projects/SimXandroid/SimX/app/src/main/res/layout/activity_play_yt_broadcast.xml" value="0.2028985507246377" />
+        <entry key="..\:/Projects/SimXandroid/SimX/app/src/main/res/layout/card_view_live_streams.xml" value="0.22" />
+        <entry key="..\:/Projects/SimXandroid/SimX/app/src/main/res/layout/create_profile_fragment1.xml" value="0.18" />
+        <entry key="..\:/Projects/SimXandroid/SimX/app/src/main/res/layout/create_profile_fragment2.xml" value="0.22" />
+        <entry key="..\:/Projects/SimXandroid/SimX/app/src/main/res/layout/create_stream_fragment.xml" value="0.1203125" />
+        <entry key="..\:/Projects/SimXandroid/SimX/app/src/main/res/layout/fragment_edit_profile.xml" value="0.33" />
+        <entry key="..\:/Projects/SimXandroid/SimX/app/src/main/res/layout/fragment_login.xml" value="0.2028985507246377" />
+        <entry key="..\:/Projects/SimXandroid/SimX/app/src/main/res/layout/fragment_login_image_.xml" value="0.2028985507246377" />
+        <entry key="..\:/Projects/SimXandroid/SimX/app/src/main/res/layout/fragment_login_with_linked_in_.xml" value="0.2028985507246377" />
+        <entry key="..\:/Projects/SimXandroid/SimX/app/src/main/res/layout/fragment_signup.xml" value="0.25" />
+        <entry key="..\:/Projects/SimXandroid/SimX/app/src/main/res/layout/home_screen_fragment.xml" value="0.1" />
+        <entry key="..\:/Projects/SimXandroid/SimX/app/src/main/res/layout/item_my_video_cv.xml" value="0.2028985507246377" />
+        <entry key="..\:/Projects/SimXandroid/SimX/app/src/main/res/layout/item_other_user_streams.xml" value="0.2028985507246377" />
+        <entry key="..\:/Projects/SimXandroid/SimX/app/src/main/res/layout/live_streams_fragment.xml" value="0.22" />
+        <entry key="..\:/Projects/SimXandroid/SimX/app/src/main/res/layout/my_profile_fragment.xml" value="0.2" />
+        <entry key="..\:/Projects/SimXandroid/SimX/app/src/main/res/layout/profile_fragment.xml" value="0.2028985507246377" />
+        <entry key="..\:/Projects/SimXandroid/SimX/app/src/main/res/xml/network_security_config.xml" value="0.1" />
+        <entry key="..\:/Projects/simx/app/src/main/res/drawable/ripple.xml" value="0.121" />
+        <entry key="..\:/Projects/simx/app/src/main/res/layout/activity_chat.xml" value="0.1" />
+        <entry key="..\:/Projects/simx/app/src/main/res/layout/activity_create_offline_stream.xml" value="0.21" />
+        <entry key="..\:/Projects/simx/app/src/main/res/layout/activity_follower_following.xml" value="0.2028985507246377" />
+        <entry key="..\:/Projects/simx/app/src/main/res/layout/activity_live_stream.xml" value="0.2028985507246377" />
+        <entry key="..\:/Projects/simx/app/src/main/res/layout/activity_main.xml" value="0.109375" />
+        <entry key="..\:/Projects/simx/app/src/main/res/layout/activity_my_video_c_v.xml" value="0.2028985507246377" />
+        <entry key="..\:/Projects/simx/app/src/main/res/layout/activity_view_stream.xml" value="0.2028985507246377" />
+        <entry key="..\:/Projects/simx/app/src/main/res/layout/card_view_followers_following.xml" value="0.2028985507246377" />
+        <entry key="..\:/Projects/simx/app/src/main/res/layout/create_profile_fragment1.xml" value="0.22" />
+        <entry key="..\:/Projects/simx/app/src/main/res/layout/create_profile_fragment2.xml" value="0.33" />
+        <entry key="..\:/Projects/simx/app/src/main/res/layout/create_stream_fragment.xml" value="0.2028985507246377" />
+        <entry key="..\:/Projects/simx/app/src/main/res/layout/fragment_followers.xml" value="0.2028985507246377" />
+        <entry key="..\:/Projects/simx/app/src/main/res/layout/fragment_login.xml" value="0.18" />
+        <entry key="..\:/Projects/simx/app/src/main/res/layout/fragment_login_image_.xml" value="0.12447916666666667" />
+        <entry key="..\:/Projects/simx/app/src/main/res/layout/fragment_login_with_linked_in_.xml" value="0.22" />
+        <entry key="..\:/Projects/simx/app/src/main/res/layout/fragment_messages.xml" value="0.22" />
+        <entry key="..\:/Projects/simx/app/src/main/res/layout/fragment_settings.xml" value="0.25" />
+        <entry key="..\:/Projects/simx/app/src/main/res/layout/home_screen_fragment.xml" value="0.11510416666666666" />
+        <entry key="..\:/Projects/simx/app/src/main/res/layout/item_job_applied.xml" value="0.10916919959473151" />
+        <entry key="..\:/Projects/simx/app/src/main/res/layout/item_my_video_cv.xml" value="0.2028985507246377" />
+        <entry key="..\:/Projects/simx/app/src/main/res/layout/item_other_user_streams.xml" value="0.33" />
+        <entry key="..\:/Projects/simx/app/src/main/res/layout/my_profile_fragment.xml" value="0.1203125" />
+        <entry key="..\:/Projects/simx/app/src/main/res/layout/profile_fragment.xml" value="0.25" />
+        <entry key="..\:/Projects/simx/app/src/main/res/menu/menu_setting.xml" value="0.25" />
+        <entry key="..\:/Projects/simx/videotrimmer/src/main/res/layout/view_time_line.xml" value="0.14" />
+        <entry key="..\:/Users/ukash/AndroidStudioProjects/ScottishHealthNew/simx_android/app/src/main/res/layout/activity_chat.xml" value="0.16770833333333332" />
+        <entry key="..\:/Users/ukash/AndroidStudioProjects/ScottishHealthNew/simx_android/app/src/main/res/layout/activity_create_offline_stream.xml" value="0.16770833333333332" />
+        <entry key="..\:/Users/ukash/AndroidStudioProjects/ScottishHealthNew/simx_android/app/src/main/res/layout/activity_follower_following.xml" value="0.16770833333333332" />
+        <entry key="..\:/Users/ukash/AndroidStudioProjects/ScottishHealthNew/simx_android/app/src/main/res/layout/activity_live_stream.xml" value="0.16770833333333332" />
+        <entry key="..\:/Users/ukash/AndroidStudioProjects/ScottishHealthNew/simx_android/app/src/main/res/layout/activity_main.xml" value="0.16770833333333332" />
+        <entry key="..\:/Users/ukash/AndroidStudioProjects/ScottishHealthNew/simx_android/app/src/main/res/layout/call_selection_fragment.xml" value="0.16770833333333332" />
+        <entry key="..\:/Users/ukash/AndroidStudioProjects/ScottishHealthNew/simx_android/app/src/main/res/layout/card_view_live_streams.xml" value="0.16770833333333332" />
+        <entry key="..\:/Users/ukash/AndroidStudioProjects/ScottishHealthNew/simx_android/app/src/main/res/layout/create_profile_fragment1.xml" value="0.16770833333333332" />
+        <entry key="..\:/Users/ukash/AndroidStudioProjects/ScottishHealthNew/simx_android/app/src/main/res/layout/create_profile_fragment2.xml" value="0.16770833333333332" />
+        <entry key="..\:/Users/ukash/AndroidStudioProjects/ScottishHealthNew/simx_android/app/src/main/res/layout/create_stream_fragment.xml" value="0.16770833333333332" />
+        <entry key="..\:/Users/ukash/AndroidStudioProjects/ScottishHealthNew/simx_android/app/src/main/res/layout/fragment_incoming_call.xml" value="0.16770833333333332" />
+        <entry key="..\:/Users/ukash/AndroidStudioProjects/ScottishHealthNew/simx_android/app/src/main/res/layout/fragment_login.xml" value="0.16770833333333332" />
+        <entry key="..\:/Users/ukash/AndroidStudioProjects/ScottishHealthNew/simx_android/app/src/main/res/layout/fragment_login_with_linked_in_.xml" value="0.3333333333333333" />
+        <entry key="..\:/Users/ukash/AndroidStudioProjects/ScottishHealthNew/simx_android/app/src/main/res/layout/fragment_messages.xml" value="0.16770833333333332" />
+        <entry key="..\:/Users/ukash/AndroidStudioProjects/ScottishHealthNew/simx_android/app/src/main/res/layout/fragment_opponent.xml" value="0.16770833333333332" />
+        <entry key="..\:/Users/ukash/AndroidStudioProjects/ScottishHealthNew/simx_android/app/src/main/res/layout/fragment_shortlist_jc.xml" value="0.15208333333333332" />
+        <entry key="..\:/Users/ukash/AndroidStudioProjects/ScottishHealthNew/simx_android/app/src/main/res/layout/fragment_signup.xml" value="0.3333333333333333" />
+        <entry key="..\:/Users/ukash/AndroidStudioProjects/ScottishHealthNew/simx_android/app/src/main/res/layout/fragment_splash.xml" value="0.16770833333333332" />
+        <entry key="..\:/Users/ukash/AndroidStudioProjects/ScottishHealthNew/simx_android/app/src/main/res/layout/item_job_applied.xml" value="0.16770833333333332" />
+        <entry key="..\:/Users/ukash/AndroidStudioProjects/ScottishHealthNew/simx_android/app/src/main/res/layout/item_my_broadcasts.xml" value="1.15" />
+        <entry key="..\:/Users/ukash/AndroidStudioProjects/ScottishHealthNew/simx_android/app/src/main/res/layout/item_other_user_streams.xml" value="0.16770833333333332" />
+        <entry key="..\:/Users/ukash/AndroidStudioProjects/ScottishHealthNew/simx_android/app/src/main/res/layout/live_streams_fragment.xml" value="0.16770833333333332" />
+        <entry key="..\:/Users/ukash/AndroidStudioProjects/ScottishHealthNew/simx_android/app/src/main/res/layout/my_profile_fragment.xml" value="0.5" />
+        <entry key="..\:/Users/ukash/AndroidStudioProjects/ScottishHealthNew/simx_android/app/src/main/res/layout/profile_fragment.xml" value="0.16770833333333332" />
+        <entry key="..\:/Users/ukash/AndroidStudioProjects/ScottishHealthNew/simx_android/app/src/main/res/menu/menu_setting.xml" value="0.16770833333333332" />
+        <entry key="..\:/Users/ukash/AndroidStudioProjects/ScottishHealthNew/simx_android/streamaxia/src/main/res/layout/activity_stream.xml" value="0.16770833333333332" />
+        <entry key="..\:/Users/ukash/AndroidStudioProjects/Simx Latest/simx-android/app/src/main/res/drawable/button_bg.xml" value="0.1638888888888889" />
+        <entry key="..\:/Users/ukash/AndroidStudioProjects/Simx Latest/simx-android/app/src/main/res/layout/activity_chat.xml" value="0.16770833333333332" />
+        <entry key="..\:/Users/ukash/AndroidStudioProjects/Simx Latest/simx-android/app/src/main/res/layout/activity_create_offline_stream.xml" value="0.16770833333333332" />
+        <entry key="..\:/Users/ukash/AndroidStudioProjects/Simx Latest/simx-android/app/src/main/res/layout/activity_live_stream.xml" value="0.16770833333333332" />
+        <entry key="..\:/Users/ukash/AndroidStudioProjects/Simx Latest/simx-android/app/src/main/res/layout/activity_login.xml" value="0.16770833333333332" />
+        <entry key="..\:/Users/ukash/AndroidStudioProjects/Simx Latest/simx-android/app/src/main/res/layout/activity_my_video_c_v.xml" value="0.16770833333333332" />
+        <entry key="..\:/Users/ukash/AndroidStudioProjects/Simx Latest/simx-android/app/src/main/res/layout/activity_payment.xml" value="0.10648148148148148" />
+        <entry key="..\:/Users/ukash/AndroidStudioProjects/Simx Latest/simx-android/app/src/main/res/layout/activity_payment_test.xml" value="0.16770833333333332" />
+        <entry key="..\:/Users/ukash/AndroidStudioProjects/Simx Latest/simx-android/app/src/main/res/layout/activity_test.xml" value="0.15364583333333334" />
+        <entry key="..\:/Users/ukash/AndroidStudioProjects/Simx Latest/simx-android/app/src/main/res/layout/activity_view_stream.xml" value="0.16770833333333332" />
+        <entry key="..\:/Users/ukash/AndroidStudioProjects/Simx Latest/simx-android/app/src/main/res/layout/card_view_live_streams.xml" value="0.1" />
+        <entry key="..\:/Users/ukash/AndroidStudioProjects/Simx Latest/simx-android/app/src/main/res/layout/card_view_settings.xml" value="0.16666666666666666" />
+        <entry key="..\:/Users/ukash/AndroidStudioProjects/Simx Latest/simx-android/app/src/main/res/layout/comments_view.xml" value="0.16770833333333332" />
+        <entry key="..\:/Users/ukash/AndroidStudioProjects/Simx Latest/simx-android/app/src/main/res/layout/create_stream_fragment.xml" value="0.16770833333333332" />
+        <entry key="..\:/Users/ukash/AndroidStudioProjects/Simx Latest/simx-android/app/src/main/res/layout/edit_profile_junaid.xml" value="0.16770833333333332" />
+        <entry key="..\:/Users/ukash/AndroidStudioProjects/Simx Latest/simx-android/app/src/main/res/layout/fragment_edit_profile.xml" value="0.16770833333333332" />
+        <entry key="..\:/Users/ukash/AndroidStudioProjects/Simx Latest/simx-android/app/src/main/res/layout/fragment_job_candidates.xml" value="0.16770833333333332" />
+        <entry key="..\:/Users/ukash/AndroidStudioProjects/Simx Latest/simx-android/app/src/main/res/layout/fragment_login_with_linked_in_.xml" value="0.1" />
+        <entry key="..\:/Users/ukash/AndroidStudioProjects/Simx Latest/simx-android/app/src/main/res/layout/fragment_map.xml" value="0.16770833333333332" />
+        <entry key="..\:/Users/ukash/AndroidStudioProjects/Simx Latest/simx-android/app/src/main/res/layout/fragment_messages.xml" value="0.16770833333333332" />
+        <entry key="..\:/Users/ukash/AndroidStudioProjects/Simx Latest/simx-android/app/src/main/res/layout/fragment_splash.xml" value="0.16770833333333332" />
+        <entry key="..\:/Users/ukash/AndroidStudioProjects/Simx Latest/simx-android/app/src/main/res/layout/item_my_video_cv.xml" value="0.14666666666666667" />
+        <entry key="..\:/Users/ukash/AndroidStudioProjects/Simx Latest/simx-android/app/src/main/res/layout/item_other_user_streams.xml" value="0.39065817409766457" />
+        <entry key="..\:/Users/ukash/AndroidStudioProjects/Simx Latest/simx-android/app/src/main/res/layout/layout_recyclerview_progressbar.xml" value="0.16770833333333332" />
+        <entry key="..\:/Users/ukash/AndroidStudioProjects/Simx Latest/simx-android/app/src/main/res/layout/layout_recyclerview_with_text.xml" value="0.16770833333333332" />
+        <entry key="..\:/Users/ukash/AndroidStudioProjects/Simx Latest/simx-android/app/src/main/res/layout/list_item_dialog.xml" value="0.4466666666666667" />
+        <entry key="..\:/Users/ukash/AndroidStudioProjects/Simx Latest/simx-android/app/src/main/res/layout/live_streams_fragment.xml" value="0.16770833333333332" />
+        <entry key="..\:/Users/ukash/AndroidStudioProjects/Simx Latest/simx-android/app/src/main/res/layout/profile_fragment.xml" value="0.16770833333333332" />
+        <entry key="..\:/Users/ukash/AndroidStudioProjects/Simx Latest/simx-android/app/src/main/res/menu/menu_job_candidates.xml" value="0.16770833333333332" />
+        <entry key="..\:/Users/ukash/AndroidStudioProjects/Simx Latest/simx-android/app/src/main/res/menu/menu_shortlist_job_candidates.xml" value="0.16770833333333332" />
+        <entry key="..\:/Users/ukash/AndroidStudioProjects/Simx Latest/simx-android/app/src/main/res/menu/video_cv_menu.xml" value="0.16770833333333332" />
+        <entry key="..\:/Users/ukash/AndroidStudioProjects/shealth/app/src/main/res/drawable/ic_eyeicon_pass.xml" value="0.18385416666666668" />
+        <entry key="..\:/Users/ukash/AndroidStudioProjects/shealth/app/src/main/res/drawable/ic_resetpasswordeye.xml" value="0.18385416666666668" />
+        <entry key="..\:/Users/ukash/AndroidStudioProjects/shealth/app/src/main/res/layout-normal/loading.xml" value="0.16770833333333332" />
+        <entry key="..\:/Users/ukash/AndroidStudioProjects/shealth/app/src/main/res/layout/activity_call_activiy.xml" value="0.16770833333333332" />
+        <entry key="..\:/Users/ukash/AndroidStudioProjects/shealth/app/src/main/res/layout/activity_chat.xml" value="0.16770833333333332" />
+        <entry key="..\:/Users/ukash/AndroidStudioProjects/shealth/app/src/main/res/layout/activity_create_offline_stream.xml" value="0.16666666666666666" />
+        <entry key="..\:/Users/ukash/AndroidStudioProjects/shealth/app/src/main/res/layout/activity_editor.xml" value="0.16770833333333332" />
+        <entry key="..\:/Users/ukash/AndroidStudioProjects/shealth/app/src/main/res/layout/activity_forgot_password.xml" value="0.14666666666666667" />
+        <entry key="..\:/Users/ukash/AndroidStudioProjects/shealth/app/src/main/res/layout/activity_full_screen.xml" value="0.16770833333333332" />
+        <entry key="..\:/Users/ukash/AndroidStudioProjects/shealth/app/src/main/res/layout/activity_job_video_player.xml" value="0.16770833333333332" />
+        <entry key="..\:/Users/ukash/AndroidStudioProjects/shealth/app/src/main/res/layout/activity_live_stream.xml" value="0.16666666666666666" />
+        <entry key="..\:/Users/ukash/AndroidStudioProjects/shealth/app/src/main/res/layout/activity_view_stream.xml" value="0.16770833333333332" />
+        <entry key="..\:/Users/ukash/AndroidStudioProjects/shealth/app/src/main/res/layout/call_connected_screen_layout.xml" value="0.16770833333333332" />
+        <entry key="..\:/Users/ukash/AndroidStudioProjects/shealth/app/src/main/res/layout/call_selection_fragment.xml" value="0.16770833333333332" />
+        <entry key="..\:/Users/ukash/AndroidStudioProjects/shealth/app/src/main/res/layout/calling_screen_layout.xml" value="0.16770833333333332" />
+        <entry key="..\:/Users/ukash/AndroidStudioProjects/shealth/app/src/main/res/layout/card_view_appointments.xml" value="0.16770833333333332" />
+        <entry key="..\:/Users/ukash/AndroidStudioProjects/shealth/app/src/main/res/layout/card_view_live_streams.xml" value="0.14722222222222223" />
+        <entry key="..\:/Users/ukash/AndroidStudioProjects/shealth/app/src/main/res/layout/create_profile_fragment2.xml" value="0.16770833333333332" />
+        <entry key="..\:/Users/ukash/AndroidStudioProjects/shealth/app/src/main/res/layout/create_stream_fragment.xml" value="0.16666666666666666" />
+        <entry key="..\:/Users/ukash/AndroidStudioProjects/shealth/app/src/main/res/layout/custom_toolbar.xml" value="0.16770833333333332" />
+        <entry key="..\:/Users/ukash/AndroidStudioProjects/shealth/app/src/main/res/layout/fragment_converastion.xml" value="0.16770833333333332" />
+        <entry key="..\:/Users/ukash/AndroidStudioProjects/shealth/app/src/main/res/layout/fragment_edit_profile.xml" value="0.1" />
+        <entry key="..\:/Users/ukash/AndroidStudioProjects/shealth/app/src/main/res/layout/fragment_incoming_call.xml" value="0.16770833333333332" />
+        <entry key="..\:/Users/ukash/AndroidStudioProjects/shealth/app/src/main/res/layout/fragment_login.xml" value="0.14722222222222223" />
+        <entry key="..\:/Users/ukash/AndroidStudioProjects/shealth/app/src/main/res/layout/fragment_login_with_linked_in_.xml" value="0.16666666666666666" />
+        <entry key="..\:/Users/ukash/AndroidStudioProjects/shealth/app/src/main/res/layout/fragment_map.xml" value="0.16770833333333332" />
+        <entry key="..\:/Users/ukash/AndroidStudioProjects/shealth/app/src/main/res/layout/fragment_my_job_requests.xml" value="0.16770833333333332" />
+        <entry key="..\:/Users/ukash/AndroidStudioProjects/shealth/app/src/main/res/layout/fragment_opponent.xml" value="0.16770833333333332" />
+        <entry key="..\:/Users/ukash/AndroidStudioProjects/shealth/app/src/main/res/layout/fragment_profile.xml" value="0.16770833333333332" />
+        <entry key="..\:/Users/ukash/AndroidStudioProjects/shealth/app/src/main/res/layout/fragment_signup.xml" value="0.16666666666666666" />
+        <entry key="..\:/Users/ukash/AndroidStudioProjects/shealth/app/src/main/res/layout/fragment_signup_with_linked_in.xml" value="0.16770833333333332" />
+        <entry key="..\:/Users/ukash/AndroidStudioProjects/shealth/app/src/main/res/layout/item_job_applied.xml" value="0.16770833333333332" />
+        <entry key="..\:/Users/ukash/AndroidStudioProjects/shealth/app/src/main/res/layout/item_job_candidates.xml" value="0.16770833333333332" />
+        <entry key="..\:/Users/ukash/AndroidStudioProjects/shealth/app/src/main/res/layout/layout_view_pager.xml" value="0.16770833333333332" />
+        <entry key="..\:/Users/ukash/AndroidStudioProjects/shealth/app/src/main/res/layout/list_item_text_right.xml" value="0.16770833333333332" />
+        <entry key="..\:/Users/ukash/AndroidStudioProjects/shealth/app/src/main/res/layout/live_streams_fragment.xml" value="0.15925925925925927" />
+        <entry key="..\:/Users/ukash/AndroidStudioProjects/shealth/app/src/main/res/layout/my_profile_fragment.xml" value="0.16666666666666666" />
+        <entry key="..\:/Users/ukash/AndroidStudioProjects/shealth/app/src/main/res/layout/profile_fragment.xml" value="0.16770833333333332" />
+        <entry key="..\:/Users/ukash/AndroidStudioProjects/shealth/common/src/main/res/layout/layout_editext.xml" value="0.16770833333333332" />
+        <entry key="..\:/Users/ukash/AndroidStudioProjects/shealth/streamaxia-player/src/main/res/layout/activity_streamaxia_player.xml" value="0.16770833333333332" />
+        <entry key="..\:/Users/ukash/AndroidStudioProjects/shealth/streamaxia/src/main/res/layout/activity_stream.xml" value="0.16770833333333332" />
+        <entry key="..\:/Users/ukash/AndroidStudioProjects/simx-android/app/src/main/res/drawable/background_curve.xml" value="0.18385416666666668" />
+        <entry key="..\:/Users/ukash/AndroidStudioProjects/simx-android/app/src/main/res/drawable/ic_eyeicon_pass.xml" value="0.18385416666666668" />
+        <entry key="..\:/Users/ukash/AndroidStudioProjects/simx-android/app/src/main/res/drawable/ic_resetpasswordeye.xml" value="0.18385416666666668" />
+        <entry key="..\:/Users/ukash/AndroidStudioProjects/simx-android/app/src/main/res/drawable/selector.xml" value="0.18385416666666668" />
+        <entry key="..\:/Users/ukash/AndroidStudioProjects/simx-android/app/src/main/res/layout/activity_chat.xml" value="0.16770833333333332" />
+        <entry key="..\:/Users/ukash/AndroidStudioProjects/simx-android/app/src/main/res/layout/activity_create_offline_stream.xml" value="0.16666666666666666" />
+        <entry key="..\:/Users/ukash/AndroidStudioProjects/simx-android/app/src/main/res/layout/activity_forgot_password.xml" value="0.16770833333333332" />
+        <entry key="..\:/Users/ukash/AndroidStudioProjects/simx-android/app/src/main/res/layout/activity_full_screen.xml" value="0.16770833333333332" />
+        <entry key="..\:/Users/ukash/AndroidStudioProjects/simx-android/app/src/main/res/layout/activity_job_video_player.xml" value="0.1" />
+        <entry key="..\:/Users/ukash/AndroidStudioProjects/simx-android/app/src/main/res/layout/activity_my_video_c_v.xml" value="0.16770833333333332" />
+        <entry key="..\:/Users/ukash/AndroidStudioProjects/simx-android/app/src/main/res/layout/activity_view_stream.xml" value="0.16770833333333332" />
+        <entry key="..\:/Users/ukash/AndroidStudioProjects/simx-android/app/src/main/res/layout/card_view_live_streams.xml" value="0.16666666666666666" />
+        <entry key="..\:/Users/ukash/AndroidStudioProjects/simx-android/app/src/main/res/layout/create_profile_fragment1.xml" value="0.16770833333333332" />
+        <entry key="..\:/Users/ukash/AndroidStudioProjects/simx-android/app/src/main/res/layout/create_profile_fragment2.xml" value="0.1" />
+        <entry key="..\:/Users/ukash/AndroidStudioProjects/simx-android/app/src/main/res/layout/custom_toolbar.xml" value="0.16770833333333332" />
+        <entry key="..\:/Users/ukash/AndroidStudioProjects/simx-android/app/src/main/res/layout/fragment_edit_profile.xml" value="0.16770833333333332" />
+        <entry key="..\:/Users/ukash/AndroidStudioProjects/simx-android/app/src/main/res/layout/fragment_login.xml" value="0.16770833333333332" />
+        <entry key="..\:/Users/ukash/AndroidStudioProjects/simx-android/app/src/main/res/layout/fragment_login_with_linked_in_.xml" value="0.16770833333333332" />
+        <entry key="..\:/Users/ukash/AndroidStudioProjects/simx-android/app/src/main/res/layout/fragment_messages.xml" value="0.16770833333333332" />
+        <entry key="..\:/Users/ukash/AndroidStudioProjects/simx-android/app/src/main/res/layout/fragment_my_broadcast.xml" value="0.16770833333333332" />
+        <entry key="..\:/Users/ukash/AndroidStudioProjects/simx-android/app/src/main/res/layout/fragment_my_job_requests.xml" value="0.16770833333333332" />
+        <entry key="..\:/Users/ukash/AndroidStudioProjects/simx-android/app/src/main/res/layout/fragment_notification.xml" value="0.16770833333333332" />
+        <entry key="..\:/Users/ukash/AndroidStudioProjects/simx-android/app/src/main/res/layout/fragment_signup.xml" value="0.16666666666666666" />
+        <entry key="..\:/Users/ukash/AndroidStudioProjects/simx-android/app/src/main/res/layout/fragment_splash.xml" value="0.16770833333333332" />
+        <entry key="..\:/Users/ukash/AndroidStudioProjects/simx-android/app/src/main/res/layout/item_my_broadcasts.xml" value="0.8333333333333334" />
+        <entry key="..\:/Users/ukash/AndroidStudioProjects/simx-android/app/src/main/res/layout/live_streams_fragment.xml" value="0.16770833333333332" />
+        <entry key="..\:/Users/ukash/AndroidStudioProjects/simx-android/app/src/main/res/layout/my_profile_fragment.xml" value="0.16770833333333332" />
+        <entry key="..\:/Users/ukash/AndroidStudioProjects/simx-android/app/src/main/res/layout/profile_fragment.xml" value="0.16770833333333332" />
+        <entry key="..\:/Users/ukash/AndroidStudioProjects/simx-android/app/src/main/res/layout/request_appointment.xml" value="0.16770833333333332" />
+        <entry key="..\:/Users/ukash/AndroidStudioProjects/simx-android/common/src/main/res/layout/activity_video_player.xml" value="0.16770833333333332" />
+        <entry key="..\:/Users/ukash/AndroidStudioProjects/simx-android/streamaxia/src/main/res/layout/activity_stream.xml" value="0.16770833333333332" />
+        <entry key="..\:/Users/ukash/Downloads/SimxLatestCodeSample/simx-android/app/src/main/res/drawable/appointments_button_unselected.xml" value="0.18385416666666668" />
+        <entry key="..\:/Users/ukash/Downloads/SimxLatestCodeSample/simx-android/app/src/main/res/drawable/appointments_selected.xml" value="0.18385416666666668" />
+        <entry key="..\:/Users/ukash/Downloads/SimxLatestCodeSample/simx-android/app/src/main/res/drawable/background_curve.xml" value="0.18385416666666668" />
+        <entry key="..\:/Users/ukash/Downloads/SimxLatestCodeSample/simx-android/app/src/main/res/drawable/btn_background_new_color.xml" value="0.18385416666666668" />
+        <entry key="..\:/Users/ukash/Downloads/SimxLatestCodeSample/simx-android/app/src/main/res/drawable/go_live_button.xml" value="0.18385416666666668" />
+        <entry key="..\:/Users/ukash/Downloads/SimxLatestCodeSample/simx-android/app/src/main/res/drawable/ic_h2_startup_logo.xml" value="0.18102564102564103" />
+        <entry key="..\:/Users/ukash/Downloads/SimxLatestCodeSample/simx-android/app/src/main/res/drawable/message_button_unselected.xml" value="0.18385416666666668" />
+        <entry key="..\:/Users/ukash/Downloads/SimxLatestCodeSample/simx-android/app/src/main/res/drawable/messages_selected.xml" value="0.18385416666666668" />
+        <entry key="..\:/Users/ukash/Downloads/SimxLatestCodeSample/simx-android/app/src/main/res/drawable/picture_ripple.xml" value="0.18102564102564103" />
+        <entry key="..\:/Users/ukash/Downloads/SimxLatestCodeSample/simx-android/app/src/main/res/drawable/play_button.xml" value="0.18102564102564103" />
+        <entry key="..\:/Users/ukash/Downloads/SimxLatestCodeSample/simx-android/app/src/main/res/drawable/play_pause_selector.xml" value="0.18102564102564103" />
+        <entry key="..\:/Users/ukash/Downloads/SimxLatestCodeSample/simx-android/app/src/main/res/drawable/progress_bar_states.xml" value="0.18102564102564103" />
+        <entry key="..\:/Users/ukash/Downloads/SimxLatestCodeSample/simx-android/app/src/main/res/drawable/red_circle.xml" value="0.18102564102564103" />
+        <entry key="..\:/Users/ukash/Downloads/SimxLatestCodeSample/simx-android/app/src/main/res/drawable/ripple.xml" value="0.18102564102564103" />
+        <entry key="..\:/Users/ukash/Downloads/SimxLatestCodeSample/simx-android/app/src/main/res/drawable/ripple_original.xml" value="0.18102564102564103" />
+        <entry key="..\:/Users/ukash/Downloads/SimxLatestCodeSample/simx-android/app/src/main/res/drawable/shape_border.xml" value="0.18102564102564103" />
+        <entry key="..\:/Users/ukash/Downloads/SimxLatestCodeSample/simx-android/app/src/main/res/drawable/shape_circle.xml" value="0.18102564102564103" />
+        <entry key="..\:/Users/ukash/Downloads/SimxLatestCodeSample/simx-android/app/src/main/res/drawable/shape_progressbar_circle.xml" value="0.18385416666666668" />
+        <entry key="..\:/Users/ukash/Downloads/SimxLatestCodeSample/simx-android/app/src/main/res/drawable/shape_rectangle.xml" value="0.18102564102564103" />
+        <entry key="..\:/Users/ukash/Downloads/SimxLatestCodeSample/simx-android/app/src/main/res/drawable/shape_rectangle_semi_transparent.xml" value="0.18102564102564103" />
+        <entry key="..\:/Users/ukash/Downloads/SimxLatestCodeSample/simx-android/app/src/main/res/drawable/tv_bg.xml" value="0.18385416666666668" />
+        <entry key="..\:/Users/ukash/Downloads/SimxLatestCodeSample/simx-android/app/src/main/res/drawable/twitter_button.xml" value="0.18102564102564103" />
+        <entry key="..\:/Users/ukash/Downloads/SimxLatestCodeSample/simx-android/app/src/main/res/drawable/unfollow_button.xml" value="0.18102564102564103" />
+        <entry key="..\:/Users/ukash/Downloads/SimxLatestCodeSample/simx-android/app/src/main/res/drawable/upload_btn.xml" value="0.18385416666666668" />
+        <entry key="..\:/Users/ukash/Downloads/SimxLatestCodeSample/simx-android/app/src/main/res/layout-normal/loading.xml" value="0.16770833333333332" />
+        <entry key="..\:/Users/ukash/Downloads/SimxLatestCodeSample/simx-android/app/src/main/res/layout/activity_chat.xml" value="0.16770833333333332" />
+        <entry key="..\:/Users/ukash/Downloads/SimxLatestCodeSample/simx-android/app/src/main/res/layout/activity_create_offline_stream.xml" value="0.16666666666666666" />
+        <entry key="..\:/Users/ukash/Downloads/SimxLatestCodeSample/simx-android/app/src/main/res/layout/activity_forgot_password.xml" value="0.16666666666666666" />
+        <entry key="..\:/Users/ukash/Downloads/SimxLatestCodeSample/simx-android/app/src/main/res/layout/activity_full_screen.xml" value="0.16770833333333332" />
+        <entry key="..\:/Users/ukash/Downloads/SimxLatestCodeSample/simx-android/app/src/main/res/layout/activity_job_video_player.xml" value="0.16770833333333332" />
+        <entry key="..\:/Users/ukash/Downloads/SimxLatestCodeSample/simx-android/app/src/main/res/layout/activity_live_stream.xml" value="0.16111111111111112" />
+        <entry key="..\:/Users/ukash/Downloads/SimxLatestCodeSample/simx-android/app/src/main/res/layout/activity_main.xml" value="0.16770833333333332" />
+        <entry key="..\:/Users/ukash/Downloads/SimxLatestCodeSample/simx-android/app/src/main/res/layout/activity_my_video_c_v.xml" value="0.16770833333333332" />
+        <entry key="..\:/Users/ukash/Downloads/SimxLatestCodeSample/simx-android/app/src/main/res/layout/activity_pic_location.xml" value="0.16666666666666666" />
+        <entry key="..\:/Users/ukash/Downloads/SimxLatestCodeSample/simx-android/app/src/main/res/layout/activity_play_yt_broadcast.xml" value="0.16770833333333332" />
+        <entry key="..\:/Users/ukash/Downloads/SimxLatestCodeSample/simx-android/app/src/main/res/layout/activity_play_yt_video.xml" value="0.15364583333333334" />
+        <entry key="..\:/Users/ukash/Downloads/SimxLatestCodeSample/simx-android/app/src/main/res/layout/activity_request_appointment.xml" value="0.16770833333333332" />
+        <entry key="..\:/Users/ukash/Downloads/SimxLatestCodeSample/simx-android/app/src/main/res/layout/activity_rtsp_player.xml" value="0.16770833333333332" />
+        <entry key="..\:/Users/ukash/Downloads/SimxLatestCodeSample/simx-android/app/src/main/res/layout/activity_show_pic_cv.xml" value="0.15364583333333334" />
+        <entry key="..\:/Users/ukash/Downloads/SimxLatestCodeSample/simx-android/app/src/main/res/layout/activity_signup.xml" value="0.14814814814814814" />
+        <entry key="..\:/Users/ukash/Downloads/SimxLatestCodeSample/simx-android/app/src/main/res/layout/calling_screen_layout.xml" value="0.16770833333333332" />
+        <entry key="..\:/Users/ukash/Downloads/SimxLatestCodeSample/simx-android/app/src/main/res/layout/card_view_live_streams.xml" value="0.14629629629629629" />
+        <entry key="..\:/Users/ukash/Downloads/SimxLatestCodeSample/simx-android/app/src/main/res/layout/create_profile_fragment1.xml" value="0.14666666666666667" />
+        <entry key="..\:/Users/ukash/Downloads/SimxLatestCodeSample/simx-android/app/src/main/res/layout/create_profile_fragment2.xml" value="0.16666666666666666" />
+        <entry key="..\:/Users/ukash/Downloads/SimxLatestCodeSample/simx-android/app/src/main/res/layout/create_stream_fragment.xml" value="0.13333333333333333" />
+        <entry key="..\:/Users/ukash/Downloads/SimxLatestCodeSample/simx-android/app/src/main/res/layout/fragment_converastion.xml" value="0.16770833333333332" />
+        <entry key="..\:/Users/ukash/Downloads/SimxLatestCodeSample/simx-android/app/src/main/res/layout/fragment_edit_profile.xml" value="0.16770833333333332" />
+        <entry key="..\:/Users/ukash/Downloads/SimxLatestCodeSample/simx-android/app/src/main/res/layout/fragment_faqs.xml" value="0.16770833333333332" />
+        <entry key="..\:/Users/ukash/Downloads/SimxLatestCodeSample/simx-android/app/src/main/res/layout/fragment_login.xml" value="0.16770833333333332" />
+        <entry key="..\:/Users/ukash/Downloads/SimxLatestCodeSample/simx-android/app/src/main/res/layout/fragment_login_with_linked_in_.xml" value="0.16666666666666666" />
+        <entry key="..\:/Users/ukash/Downloads/SimxLatestCodeSample/simx-android/app/src/main/res/layout/fragment_map.xml" value="0.16770833333333332" />
+        <entry key="..\:/Users/ukash/Downloads/SimxLatestCodeSample/simx-android/app/src/main/res/layout/fragment_shortlist_jc.xml" value="0.16770833333333332" />
+        <entry key="..\:/Users/ukash/Downloads/SimxLatestCodeSample/simx-android/app/src/main/res/layout/fragment_signup.xml" value="0.22" />
+        <entry key="..\:/Users/ukash/Downloads/SimxLatestCodeSample/simx-android/app/src/main/res/layout/fragment_signup_with_linked_in.xml" value="0.16770833333333332" />
+        <entry key="..\:/Users/ukash/Downloads/SimxLatestCodeSample/simx-android/app/src/main/res/layout/fragment_splash.xml" value="0.16770833333333332" />
+        <entry key="..\:/Users/ukash/Downloads/SimxLatestCodeSample/simx-android/app/src/main/res/layout/fragment_twitter_web_view.xml" value="0.16770833333333332" />
+        <entry key="..\:/Users/ukash/Downloads/SimxLatestCodeSample/simx-android/app/src/main/res/layout/fragment_web_view.xml" value="0.16770833333333332" />
+        <entry key="..\:/Users/ukash/Downloads/SimxLatestCodeSample/simx-android/app/src/main/res/layout/home_screen_fragment.xml" value="0.16770833333333332" />
+        <entry key="..\:/Users/ukash/Downloads/SimxLatestCodeSample/simx-android/app/src/main/res/layout/item_job_candidates.xml" value="0.16770833333333332" />
+        <entry key="..\:/Users/ukash/Downloads/SimxLatestCodeSample/simx-android/app/src/main/res/layout/item_my_video_cv.xml" value="0.16770833333333332" />
+        <entry key="..\:/Users/ukash/Downloads/SimxLatestCodeSample/simx-android/app/src/main/res/layout/layout_bottom_sheet.xml" value="0.16770833333333332" />
+        <entry key="..\:/Users/ukash/Downloads/SimxLatestCodeSample/simx-android/app/src/main/res/layout/layout_recyclerview_progressbar.xml" value="0.16770833333333332" />
+        <entry key="..\:/Users/ukash/Downloads/SimxLatestCodeSample/simx-android/app/src/main/res/layout/layout_recyclerview_with_text.xml" value="0.16666666666666666" />
+        <entry key="..\:/Users/ukash/Downloads/SimxLatestCodeSample/simx-android/app/src/main/res/layout/layout_view_pager.xml" value="0.1537037037037037" />
+        <entry key="..\:/Users/ukash/Downloads/SimxLatestCodeSample/simx-android/app/src/main/res/layout/live_streams_fragment.xml" value="0.14666666666666667" />
+        <entry key="..\:/Users/ukash/Downloads/SimxLatestCodeSample/simx-android/app/src/main/res/layout/my_profile_fragment.xml" value="0.16770833333333332" />
+        <entry key="..\:/Users/ukash/Downloads/SimxLatestCodeSample/simx-android/app/src/main/res/layout/picture_cv.xml" value="0.16770833333333332" />
+        <entry key="..\:/Users/ukash/Downloads/SimxLatestCodeSample/simx-android/app/src/main/res/layout/profile_fragment.xml" value="0.16770833333333332" />
+        <entry key="..\:/Users/ukash/Downloads/SimxLatestCodeSample/simx-android/app/src/main/res/layout/request_appointment.xml" value="0.3333333333333333" />
+        <entry key="..\:/Users/ukash/Downloads/SimxLatestCodeSample/simx-android/app/src/main/res/menu/menu_job_candidates.xml" value="0.16770833333333332" />
+        <entry key="..\:/Users/ukash/Downloads/SimxLatestCodeSample/simx-android/app/src/main/res/menu/menu_shortlist_job_candidates.xml" value="0.16770833333333332" />
+        <entry key="..\:/Users/ukash/Downloads/SimxLatestCodeSample/simx-android/app/src/main/res/menu/navigation_view_menu.xml" value="0.16770833333333332" />
+        <entry key="..\:/Users/ukash/Downloads/SimxLatestCodeSample/simx-android/app/src/main/res/menu/video_cv_menu.xml" value="0.16770833333333332" />
+        <entry key="..\:/Users/ukash/Downloads/SimxLatestCodeSample/simx-android/streamaxia/src/main/res/layout/activity_splashscreen.xml" value="0.16770833333333332" />
+        <entry key="..\:/Users/ukash/Downloads/SimxLatestCodeSample/simx-android/streamaxia/src/main/res/layout/activity_stream.xml" value="0.16770833333333332" />
+        <entry key="..\:/sharjeel/simx_android/app/src/main/res/drawable/ic_close_icon.xml" value="0.2203125" />
+        <entry key="..\:/sharjeel/simx_android/app/src/main/res/drawable/ripple_original.xml" value="0.2203125" />
+        <entry key="..\:/sharjeel/simx_android/app/src/main/res/layout/activity_create_offline_stream.xml" value="0.25" />
+        <entry key="..\:/sharjeel/simx_android/app/src/main/res/layout/activity_job_video_player.xml" value="0.20416666666666666" />
+        <entry key="..\:/sharjeel/simx_android/app/src/main/res/layout/activity_live_stream.xml" value="0.2" />
+        <entry key="..\:/sharjeel/simx_android/app/src/main/res/layout/activity_pic_location.xml" value="0.20416666666666666" />
+        <entry key="..\:/sharjeel/simx_android/app/src/main/res/layout/activity_view_stream.xml" value="0.4444444444444444" />
+        <entry key="..\:/sharjeel/simx_android/app/src/main/res/layout/appointmentslist.xml" value="0.25" />
+        <entry key="..\:/sharjeel/simx_android/app/src/main/res/layout/card_view_appointments.xml" value="0.33" />
+        <entry key="..\:/sharjeel/simx_android/app/src/main/res/layout/card_view_appointments_have.xml" value="0.33" />
+        <entry key="..\:/sharjeel/simx_android/app/src/main/res/layout/card_view_live_streams.xml" value="0.20416666666666666" />
+        <entry key="..\:/sharjeel/simx_android/app/src/main/res/layout/comments_view.xml" value="0.31966053748231965" />
+        <entry key="..\:/sharjeel/simx_android/app/src/main/res/layout/create_profile_fragment1.xml" value="0.20416666666666666" />
+        <entry key="..\:/sharjeel/simx_android/app/src/main/res/layout/create_stream_fragment.xml" value="0.20416666666666666" />
+        <entry key="..\:/sharjeel/simx_android/app/src/main/res/layout/fragment_appointments.xml" value="0.14947916666666666" />
+        <entry key="..\:/sharjeel/simx_android/app/src/main/res/layout/fragment_signup.xml" value="0.33" />
+        <entry key="..\:/sharjeel/simx_android/app/src/main/res/layout/fragment_terms_and_conditions.xml" value="0.20416666666666666" />
+        <entry key="..\:/sharjeel/simx_android/app/src/main/res/layout/home_screen_fragment.xml" value="0.20416666666666666" />
+        <entry key="..\:/sharjeel/simx_android/app/src/main/res/layout/item_job_applied.xml" value="0.22" />
+        <entry key="..\:/sharjeel/simx_android/app/src/main/res/layout/live_streams_fragment.xml" value="0.20416666666666666" />
+        <entry key="..\:/sharjeel/simx_android/app/src/main/res/layout/terms_condition_itemview.xml" value="0.25" />
+        <entry key="..\:/sharjeel/simx_android/app/src/main/res/menu/menu_setting.xml" value="0.40268456375838924" />
+        <entry key="..\:/simx-android/app/src/main/res/layout/activity_call_activiy.xml" value="0.17239583333333333" />
+        <entry key="..\:/simx-android/app/src/main/res/layout/activity_ratings_and_reviews.xml" value="0.15260416666666668" />
+        <entry key="..\:/simx-android/app/src/main/res/layout/call_selection_fragment.xml" value="0.12681159420289856" />
+        <entry key="..\:/simx-android/app/src/main/res/layout/create_profile_fragment1.xml" value="0.14175724637681159" />
+        <entry key="..\:/simx-android/app/src/main/res/layout/create_profile_fragment2.xml" value="0.14175724637681159" />
+        <entry key="..\:/simx-android/app/src/main/res/layout/fragment_converastion.xml" value="0.125" />
+        <entry key="..\:/simx-android/app/src/main/res/layout/fragment_incoming_call.xml" value="0.125" />
+        <entry key="..\:/simx-android/app/src/main/res/layout/fragment_splash.xml" value="0.11197916666666667" />
+        <entry key="..\:/simx-android/app/src/main/res/layout/my_profile_fragment.xml" value="0.264" />
+        <entry key="..\:/simx-android/app/src/main/res/layout/rating_dialog.xml" value="0.10052083333333334" />
+        <entry key="..\:/simx-android/app/src/main/res/layout/reviews_list_item.xml" value="0.264" />
+      </map>
+    </option>
+  </component>
+  <component name="NullableNotNullManager">
+    <option name="myDefaultNullable" value="org.jetbrains.annotations.Nullable" />
+    <option name="myDefaultNotNull" value="androidx.annotation.NonNull" />
+    <option name="myNullables">
+      <value>
+        <list size="15">
+          <item index="0" class="java.lang.String" itemvalue="org.jetbrains.annotations.Nullable" />
+          <item index="1" class="java.lang.String" itemvalue="javax.annotation.Nullable" />
+          <item index="2" class="java.lang.String" itemvalue="javax.annotation.CheckForNull" />
+          <item index="3" class="java.lang.String" itemvalue="edu.umd.cs.findbugs.annotations.Nullable" />
+          <item index="4" class="java.lang.String" itemvalue="android.support.annotation.Nullable" />
+          <item index="5" class="java.lang.String" itemvalue="androidx.annotation.Nullable" />
+          <item index="6" class="java.lang.String" itemvalue="android.annotation.Nullable" />
+          <item index="7" class="java.lang.String" itemvalue="androidx.annotation.RecentlyNullable" />
+          <item index="8" class="java.lang.String" itemvalue="org.checkerframework.checker.nullness.qual.Nullable" />
+          <item index="9" class="java.lang.String" itemvalue="org.checkerframework.checker.nullness.compatqual.NullableDecl" />
+          <item index="10" class="java.lang.String" itemvalue="org.checkerframework.checker.nullness.compatqual.NullableType" />
+          <item index="11" class="java.lang.String" itemvalue="com.android.annotations.Nullable" />
+          <item index="12" class="java.lang.String" itemvalue="org.eclipse.jdt.annotation.Nullable" />
+          <item index="13" class="java.lang.String" itemvalue="io.reactivex.annotations.Nullable" />
+          <item index="14" class="java.lang.String" itemvalue="io.reactivex.rxjava3.annotations.Nullable" />
+        </list>
+      </value>
+    </option>
+    <option name="myNotNulls">
+      <value>
+        <list size="15">
+          <item index="0" class="java.lang.String" itemvalue="org.jetbrains.annotations.NotNull" />
+          <item index="1" class="java.lang.String" itemvalue="javax.annotation.Nonnull" />
+          <item index="2" class="java.lang.String" itemvalue="edu.umd.cs.findbugs.annotations.NonNull" />
+          <item index="3" class="java.lang.String" itemvalue="android.support.annotation.NonNull" />
+          <item index="4" class="java.lang.String" itemvalue="androidx.annotation.NonNull" />
+          <item index="5" class="java.lang.String" itemvalue="android.annotation.NonNull" />
+          <item index="6" class="java.lang.String" itemvalue="androidx.annotation.RecentlyNonNull" />
+          <item index="7" class="java.lang.String" itemvalue="org.checkerframework.checker.nullness.qual.NonNull" />
+          <item index="8" class="java.lang.String" itemvalue="org.checkerframework.checker.nullness.compatqual.NonNullDecl" />
+          <item index="9" class="java.lang.String" itemvalue="org.checkerframework.checker.nullness.compatqual.NonNullType" />
+          <item index="10" class="java.lang.String" itemvalue="com.android.annotations.NonNull" />
+          <item index="11" class="java.lang.String" itemvalue="org.eclipse.jdt.annotation.NonNull" />
+          <item index="12" class="java.lang.String" itemvalue="io.reactivex.annotations.NonNull" />
+          <item index="13" class="java.lang.String" itemvalue="io.reactivex.rxjava3.annotations.NonNull" />
+          <item index="14" class="java.lang.String" itemvalue="lombok.NonNull" />
+        </list>
+      </value>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

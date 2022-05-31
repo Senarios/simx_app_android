@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+
+    </data>
+
+
+        <androidx.cardview.widget.CardView
+            app:cardElevation="5dp"
+            android:id="@+id/root"
+            android:layout_marginBottom="5sp"
+            android:layout_marginLeft="5sp"
+            android:layout_marginRight="5sp"
+            android:layout_marginTop="5sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:focusable="true"
+                android:clickable="true"
+                android:id="@+id/container"
+                android:background="?attr/selectableItemBackground"
+                android:layout_height="match_parent">
+
+
+                <ProgressBar
+                    android:id="@+id/progress_bar"
+                    android:padding="40dp"
+                    android:layout_width="0dp"
+                    android:layout_height="150dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintDimensionRatio="1:1.2"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0"
+                    />
+
+                <ImageView
+                    android:id="@+id/image"
+                    android:layout_width="0dp"
+                    android:layout_height="150dp"
+                    android:scaleType="fitXY"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintDimensionRatio="1:1.2"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0" />
+
+                <ImageView
+                    android:id="@+id/viewers_imagee"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/doctor_name"
+                    app:layout_constraintTop_toBottomOf="@+id/user_type"
+                    app:layout_constraintVertical_bias="0.1"
+                    app:srcCompat="@drawable/group_icon_" />
+
+                <com.greenfrvr.hashtagview.HashtagView
+                    app:tagEllipsize="end"
+                    android:layout_marginTop="4dp"
+                    app:tagTextSize="@dimen/_8ssp"
+                    app:rowDistribution="none"
+                    app:composeMode="linear"
+                    android:id="@+id/tagsView"
+                    app:selectionMode="true"
+                    app:rowGravity="left"
+                    app:tagBackground="@drawable/ripple"
+                    app:tagPaddingLeft="10dp"
+                    app:tagPaddingRight="10dp"
+                    app:tagTextColor="@color/white"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@id/viewers_imagee"
+                    app:layout_constraintStart_toStartOf="@id/name"
+                    app:layout_constraintEnd_toEndOf="@id/name"
+
+                    />
+
+                <br.com.simplepass.loadingbutton.customViews.CircularProgressButton
+                    android:layout_marginHorizontal="10dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/image"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_width="100dp"
+                    android:visibility="gone"
+                    android:textAllCaps="false"
+                    app:spinning_bar_width="4dp"
+                    app:spinning_bar_color="#FFF"
+                    app:spinning_bar_padding="6dp"
+                    android:layout_height="30dp"
+                    app:layout_constraintTop_toBottomOf="@id/tagsView"
+                    android:text="Apply"
+                    android:id="@+id/button_job"
+                    android:textColor="@color/white"
+                    android:background="@drawable/go_live_button"
+                    />
+                <TextView
+                    android:id="@+id/jobDes"
+                    android:layout_width="247dp"
+                    android:layout_height="25dp"
+                   android:maxLines="1"
+                    android:layout_marginBottom="7dp"
+                    android:autoLink="web"
+                    android:hint="No URL"
+                    app:layout_constraintBottom_toTopOf="@+id/doctor_name"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.666"
+                    app:layout_constraintStart_toEndOf="@+id/circle_profile_picture"
+                    app:layout_constraintTop_toBottomOf="@+id/name"
+                    app:layout_constraintVertical_bias="0.0" />
+
+                <TextView
+                    android:layout_marginEnd="5dp"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:id="@+id/doctor_name"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Colin Rawlinson"
+                    android:textColor="@color/Black"
+                    android:textSize="@dimen/_8ssp"
+                    android:layout_marginTop="40dp"
+                    app:layout_constraintEnd_toEndOf="@+id/name"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/name"
+                    app:layout_constraintTop_toBottomOf="@+id/name" />
+
+                <TextView
+                    android:textSize="@dimen/_8ssp"
+                    android:textColor="@color/primary"
+                    android:id="@+id/user_type"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    app:layout_constraintStart_toStartOf="@id/name"
+                    app:layout_constraintEnd_toEndOf="@id/name"
+                    app:layout_constraintTop_toBottomOf="@id/doctor_name"
+                    />
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/startup_partner_wanted"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/_10ssp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:maxLines="2"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toEndOf="@+id/image"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="1.0" />
+
+                <TextView
+                    android:id="@+id/Viewers"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:text="Viewers: "
+                    android:textColor="@color/Black"
+                    android:textSize="@dimen/_8ssp"
+                    app:layout_constraintBottom_toBottomOf="@+id/viewers_imagee"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toEndOf="@+id/viewers_imagee"
+                    app:layout_constraintTop_toTopOf="@+id/viewers_imagee" />
+
+                <TextView
+                    android:id="@+id/viewers_number"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="18"
+                    android:textColor="@color/Black"
+                    android:textSize="@dimen/_8ssp"
+                    app:layout_constraintBottom_toBottomOf="@+id/Viewers"
+                    app:layout_constraintStart_toEndOf="@+id/Viewers"
+                    app:layout_constraintTop_toTopOf="@+id/Viewers"
+                    app:layout_constraintVertical_bias="0.0" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintGuide_begin="57dp" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/circle_profile_picture"
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_marginEnd="4dp"
+                    android:visibility="gone"
+                    android:src="@drawable/notifications_tab_unselectedicon_"
+                    app:layout_constraintDimensionRatio="1:1.4"
+                    app:layout_constraintEnd_toStartOf="@+id/name"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/name"
+                    app:layout_constraintVertical_bias="0.0">
+
+                </de.hdodenhof.circleimageview.CircleImageView>
+                <ImageView
+                    android:id="@+id/share_button"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_marginEnd="4dp"
+                    android:src="@drawable/sharelightblueicon"
+                    android:visibility="gone"
+                    app:layout_constraintBottom_toTopOf="@+id/Viewers"
+                    app:layout_constraintDimensionRatio="1:0.8"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/guideline20"
+                    app:layout_constraintTop_toTopOf="@+id/doctor_name"
+                    app:layout_constraintVertical_bias="0.157" />
+
+                <ImageView
+                    android:id="@+id/delete_button"
+                    android:layout_width="0dp"
+                    android:visibility="gone"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/delete_icon"
+                    app:layout_constraintBottom_toBottomOf="@+id/viewers_number"
+                    app:layout_constraintDimensionRatio="1:0.8"
+                    app:layout_constraintEnd_toEndOf="@+id/share_button"
+                    app:layout_constraintStart_toStartOf="@+id/share_button"
+                    app:layout_constraintTop_toBottomOf="@+id/share_button" />
+
+                <androidx.constraintlayout.widget.Group
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    app:constraint_referenced_ids="viewers_imagee,viewers_number,Viewers"
+                    />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+    </layout>

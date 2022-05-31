@@ -1,0 +1,3 @@
+-keep class j$.util.concurrent.ConcurrentHashMap {
+    void <init>();
+}

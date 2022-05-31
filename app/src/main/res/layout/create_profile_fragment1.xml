@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/root"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <Button
+            android:id="@+id/complete_profile_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/round_shaped_button"
+            android:paddingHorizontal="20dp"
+            android:text="@string/createprofile1_complete_profile"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+<!--        <EditText-->
+<!--            android:id="@+id/set_hourly_rate"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="20dp"-->
+<!--            android:ems="10"-->
+<!--            android:hint=""-->
+<!--            android:inputType="numberDecimal"-->
+<!--            android:padding="10dp"-->
+<!--            app:layout_constraintEnd_toEndOf="@+id/set_linkeldn_profile_link"-->
+<!--            app:layout_constraintStart_toStartOf="@+id/hourly_rate"-->
+<!--            app:layout_constraintTop_toBottomOf="@id/hourly_rate" />-->
+
+        <TextView
+            android:id="@+id/hourly_detail"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:alpha="0.8"
+            android:padding="10dp"
+            android:text="Get paid for coaching  , mentoring or Subject Matter Expertise ."
+            android:textColor="@color/black"
+            android:visibility="invisible"
+            app:layout_constraintEnd_toEndOf="@+id/set_hourly_rate"
+            app:layout_constraintTop_toBottomOf="@id/set_hourly_rate" />
+
+        <EditText
+            android:id="@+id/set_linkeldn_profile_link"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/edit_text_box"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:padding="10dp"
+            android:paddingStart="@dimen/_10ssp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/linkedln_profile_text"
+            app:layout_constraintTop_toBottomOf="@id/linkedln_profile_text" />
+
+        <ImageView
+            android:id="@+id/info_grey_button"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginBottom="5dp"
+            app:layout_constraintBottom_toTopOf="@+id/set_linkeldn_profile_link"
+            app:layout_constraintEnd_toEndOf="@+id/set_linkeldn_profile_link"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/linkedln_profile_text"
+            app:layout_constraintTop_toTopOf="@+id/linkedln_profile_text"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/info_grey_2" />
+
+        <TextView
+            android:id="@+id/linkedln_profile_text"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginTop="30dp"
+            android:text="Add your Linkeldn profile Username: (OPTIONAL)"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:textColor="@color/Black"
+            app:layout_constraintStart_toStartOf="@id/one_step_away_text"
+            app:layout_constraintTop_toBottomOf="@id/one_step_away_text" />
+
+        <TextView
+            android:id="@+id/one_step_away_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="16dp"
+            android:text="One Step Away"
+            android:textAlignment="textStart"
+            android:textAllCaps="false"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/hourly_rate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="72dp"
+            android:text=""
+            android:textColor="@color/Black"
+            android:textSize="@dimen/_11ssp"
+            app:layout_constraintEnd_toEndOf="@+id/linkedln_profile_text"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/linkedln_profile_text"
+            app:layout_constraintTop_toBottomOf="@id/set_linkeldn_profile_link" />
+
+        <TextView
+            android:id="@+id/textview_uploadcv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Select Video CV"
+            android:textColor="@color/text_color_black"
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="@id/set_hourly_rate"
+            app:layout_constraintTop_toBottomOf="@id/set_hourly_rate" />
+
+
+        <ImageButton
+            android:id="@+id/selectVideo"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/upload_btn"
+            android:elevation="5dp"
+            android:onClick="selectVideo"
+            android:padding="5dp"
+            android:src="@drawable/ic_add"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textview_uploadcv" />
+
+
+        <ImageView
+            android:id="@+id/videoView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="20dp"
+            android:src="@drawable/ic_person_add"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toTopOf="@id/complete_profile_button"
+            app:layout_constraintTop_toBottomOf="@id/selectVideo" />
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="20dp"
+            android:alpha="0.3"
+            android:background="@color/black"
+            android:visibility="visible"
+            app:layout_constraintBottom_toTopOf="@id/complete_profile_button"
+            app:layout_constraintTop_toBottomOf="@id/selectVideo" />
+
+        <ImageView
+            android:id="@+id/playButton"
+            android:layout_width="@dimen/_40ssp"
+            android:layout_height="@dimen/_40ssp"
+            android:src="@drawable/icon_video_play"
+            app:layout_constraintBottom_toBottomOf="@id/videoView"
+            app:layout_constraintEnd_toEndOf="@id/videoView"
+            app:layout_constraintStart_toStartOf="@id/videoView"
+            app:layout_constraintTop_toTopOf="@id/videoView" />
+
+        <androidx.constraintlayout.widget.Group
+            android:id="@+id/video_views"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:constraint_referenced_ids="view,videoView,playButton," />
+
+        <androidx.constraintlayout.widget.Group
+            android:id="@+id/group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:constraint_referenced_ids="hourly_rate,set_hourly_rate"
+
+            />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

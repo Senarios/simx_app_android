@@ -1,0 +1,11 @@
+
+include ':app', ':videotrimmer'
+//gradle.ext.exoplayerRoot = '../../Samples/ExoPlayer'
+//gradle.ext.exoplayerModulePrefix = 'exoplayer-'
+//apply from: new File(gradle.ext.exoplayerRoot, 'core_settings.gradle')
+rootProject.name='SimX'
+include ':common'
+include ':streamaxia', ':streamaxia-opensdk'
+include ':streamaxia-player'
+include ':streamaxialib-release'
+

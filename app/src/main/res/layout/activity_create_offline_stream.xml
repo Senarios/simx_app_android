@@ -1,0 +1,444 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:theme="@style/Material">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/primary"
+            app:layout_constraintTop_toTopOf="parent"
+            app:navigationIcon="@drawable/ic_arrow_back_white"
+            app:subtitleTextColor="@color/white"
+            app:title="Upload Video"
+            app:titleTextColor="@color/white" />
+
+
+        <RadioButton
+            android:id="@+id/isVideoLink"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:checked="true"
+            app:layout_constraintStart_toStartOf="@id/inputlayout"
+            app:layout_constraintTop_toBottomOf="@id/inputlayout" />
+
+        <EditText
+            android:id="@+id/jobDes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_60sdp"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:layout_marginBottom="@dimen/_50sdp"
+            android:hint="Video link here"
+            android:inputType="text"
+            app:layout_constraintBottom_toTopOf="@+id/tagsView"
+            app:layout_constraintTop_toBottomOf="@+id/inputlayout" />
+
+        <View
+            android:id="@+id/jobDesView"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="@+id/jobDes"
+            app:layout_constraintEnd_toEndOf="@+id/jobDes"
+            app:layout_constraintStart_toStartOf="@+id/jobDes"
+            app:layout_constraintTop_toTopOf="@+id/jobDes" />
+
+        <RadioButton
+            android:id="@+id/isSelectVideo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            app:layout_constraintStart_toStartOf="@+id/inputlayout"
+            app:layout_constraintTop_toBottomOf="@id/isVideoLink" />
+
+        <ImageButton
+            android:id="@+id/selectVideo"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="0dp"
+            android:layout_margin="@dimen/_20sdp"
+            android:background="@drawable/upload_btn"
+            android:elevation="5dp"
+            android:onClick="selectVideo"
+            android:padding="5dp"
+            android:src="@drawable/ic_add"
+            app:layout_constraintStart_toEndOf="@+id/isSelectVideo"
+            app:layout_constraintTop_toBottomOf="@id/isVideoLink" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:background="#4D000000"
+            app:layout_constraintTop_toBottomOf="@id/tagsView"
+            tools:ignore="MissingConstraints" />
+
+        <RadioButton
+            android:id="@+id/rg_apply_on_video"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:checked="true"
+            android:text="Apply with video"
+            app:layout_constraintStart_toStartOf="@id/inputlayout"
+            app:layout_constraintTop_toBottomOf="@id/tagsView" />
+
+        <RadioButton
+            android:id="@+id/rg_apply_on_jobsite"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginTop="5dp"
+            app:layout_constraintStart_toStartOf="@id/inputlayout"
+            app:layout_constraintTop_toBottomOf="@id/rg_apply_on_video" />
+
+        <EditText
+            android:id="@+id/jobSite_link"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_40sdp"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:hint="Apply on Jobsite"
+            android:inputType="text"
+            android:textSize="@dimen/_11sdp"
+            app:layout_constraintBottom_toBottomOf="@+id/rg_apply_on_jobsite"
+            app:layout_constraintEnd_toEndOf="@+id/rg_apply_on_jobsite"
+            app:layout_constraintStart_toStartOf="@+id/rg_apply_on_jobsite"
+            app:layout_constraintTop_toTopOf="@+id/rg_apply_on_jobsite" />
+
+        <View
+            android:id="@+id/jobSiteView"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="@+id/jobSite_link"
+            app:layout_constraintEnd_toEndOf="@+id/jobSite_link"
+            app:layout_constraintStart_toStartOf="@+id/jobSite_link"
+            app:layout_constraintTop_toTopOf="@+id/jobSite_link" />
+
+        <View
+            android:id="@+id/linetwo"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:background="#4D000000"
+            app:layout_constraintTop_toBottomOf="@id/rg_apply_on_jobsite"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/tv_notify"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:text="How would you like job hunter to contact you ?"
+            app:layout_constraintStart_toStartOf="@id/inputlayout"
+            app:layout_constraintTop_toBottomOf="@+id/linetwo" />
+
+        <RadioButton
+            android:id="@+id/messages_only"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginTop="5dp"
+            android:checked="true"
+            android:text="Message only"
+            app:layout_constraintStart_toStartOf="@+id/inputlayout"
+            app:layout_constraintTop_toBottomOf="@id/tv_notify" />
+
+        <RadioButton
+            android:id="@+id/call_only"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginTop="5dp"
+            android:text="Call only"
+            app:layout_constraintStart_toStartOf="@+id/inputlayout"
+            app:layout_constraintTop_toBottomOf="@id/messages_only" />
+
+        <RadioButton
+            android:id="@+id/both_msg_call"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginTop="5dp"
+            android:text="Both message and call"
+            app:layout_constraintStart_toStartOf="@+id/inputlayout"
+            app:layout_constraintTop_toBottomOf="@id/call_only" />
+
+        <Button
+            android:id="@+id/btn_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/go_live_button"
+            android:elevation="10dp"
+            android:paddingHorizontal="10dp"
+            android:text="Select Location"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/inputlayout"
+            app:layout_constraintTop_toBottomOf="@id/both_msg_call" />
+
+        <TextView
+            android:id="@+id/cityName"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="3"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="@+id/btn_location"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/btn_location"
+            app:layout_constraintTop_toTopOf="@+id/btn_location" />
+
+        <Button
+            android:id="@+id/btn_upload"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/go_live_button"
+            android:elevation="10dp"
+            android:onClick="upload"
+            android:paddingHorizontal="20dp"
+            android:text="Upload Offline Pitch"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <com.greenfrvr.hashtagview.HashtagView
+            android:id="@+id/tagsView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            app:composeMode="linear"
+            app:layout_constraintEnd_toEndOf="@id/inputlayout"
+            app:layout_constraintStart_toStartOf="@id/inputlayout"
+            app:layout_constraintTop_toBottomOf="@id/selectVideo"
+            app:rowDistribution="none"
+            app:rowGravity="left"
+            app:selectionMode="true"
+            app:tagBackground="@drawable/ripple"
+            app:tagPaddingLeft="10dp"
+            app:tagPaddingRight="10dp"
+            app:tagTextColor="@color/white" />
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/inputlayout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="10dp"
+            android:hint="Title"
+            app:boxStrokeColor="@color/primary"
+            app:hintAnimationEnabled="true"
+            app:hintTextColor="@color/primary"
+            app:layout_constraintTop_toBottomOf="@id/toolbar">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLength="20"
+                android:singleLine="true" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="5dp"
+            android:autoSizeTextType="uniform"
+            android:gravity="center_vertical"
+            android:text="Disable Comments?"
+            android:textColor="@color/Black"
+            app:layout_constraintBottom_toBottomOf="@+id/checkbox"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.036"
+            app:layout_constraintStart_toEndOf="@+id/checkbox"
+            app:layout_constraintTop_toTopOf="@+id/checkbox"
+            app:layout_constraintVertical_bias="1.0" />
+
+
+        <androidx.constraintlayout.widget.Group
+            android:id="@+id/group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:constraint_referenced_ids="view,playButton,videoView" />
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="@dimen/_80sdp"
+            android:layout_margin="20dp"
+            android:alpha="0.3"
+            android:background="@color/black"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="@id/selectVideo"
+            app:layout_constraintStart_toEndOf="@+id/selectVideo"
+            app:layout_constraintTop_toTopOf="@id/selectVideo"
+            tools:ignore="MissingConstraints" />
+
+        <ImageView
+            android:id="@+id/playButton"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:onClick="playVideo"
+            android:src="@drawable/icon_video_play"
+            app:layout_constraintBottom_toBottomOf="@id/videoView"
+            app:layout_constraintEnd_toEndOf="@id/videoView"
+            app:layout_constraintStart_toStartOf="@id/videoView"
+            app:layout_constraintTop_toTopOf="@id/videoView" />
+
+
+        <ImageView
+            android:id="@+id/videoView"
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="@dimen/_80sdp"
+            android:layout_margin="20dp"
+            android:scaleType="centerCrop"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="@id/selectVideo"
+            app:layout_constraintStart_toEndOf="@+id/selectVideo"
+            app:layout_constraintTop_toTopOf="@id/selectVideo"
+            app:layout_constraintVertical_weight="0.8"
+            app:useDefaultControls="true"
+            app:videoScale="centerCrop"
+            tools:ignore="MissingConstraints" />
+
+        <ImageView
+            android:id="@+id/ytThumbnail"
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="@dimen/_80sdp"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/simx_app_icon_square"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@id/videoView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@id/videoView"
+            app:layout_constraintTop_toTopOf="@id/videoView" />
+
+        <ProgressBar
+            android:id="@+id/ytProgress"
+            android:layout_width="@dimen/_35sdp"
+            android:layout_height="@dimen/_35sdp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@id/videoView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@id/videoView"
+            app:layout_constraintTop_toTopOf="@id/videoView" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.72" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.37" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.7" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.54" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_im"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.60" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.42" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.21" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.63" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.08891929" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.8427896" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.47" />
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="gone"
+            tools:ignore="RedundantNamespace">
+
+            <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+                android:id="@+id/youtube_player_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                app:autoPlay="false" />
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

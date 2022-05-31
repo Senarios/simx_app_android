@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/blue">
+
+        <ImageView
+            android:id="@+id/back_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_10sdp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/ic_arrow_back"
+            android:tint="@color/white" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_picture"
+            android:layout_width="@dimen/_90sdp"
+            android:layout_height="@dimen/_90sdp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="@dimen/_40sdp"
+            android:layout_marginBottom="@dimen/_45sdp"
+            android:paddingBottom="@dimen/_5ssp"
+            android:src="@drawable/h2pay2"
+            app:civ_border_color="@color/black"
+            app:civ_border_width="1dp" />
+
+        <ImageView
+            android:id="@+id/camera_blue"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_alignEnd="@id/profile_picture"
+            android:layout_alignBottom="@id/profile_picture"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_7sdp"
+            android:background="@drawable/circular_ripple_green"
+            android:padding="@dimen/_5sdp"
+            android:src="@drawable/ic_baseline_camera_alt_24" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/save_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_25ssp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:background="@drawable/save_button"
+            android:text="Save"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/buttonsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_45sdp"
+        android:layout_marginLeft="@dimen/_25sdp"
+        android:layout_marginTop="@dimen/_150sdp"
+        android:layout_marginRight="@dimen/_25sdp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:weightSum="3.02">
+
+        <TextView
+            android:id="@+id/current_balance_text"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="?attr/selectableItemBackground"
+            android:gravity="center"
+            android:text="Balance \n£ 0.0"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/_12sdp"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:layout_weight="0.01"
+            android:background="@color/DimGray" />
+
+        <TextView
+            android:id="@+id/add_payment_btn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="?attr/selectableItemBackground"
+            android:gravity="center"
+            android:text="Add \npayment"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/_12sdp"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:layout_weight="0.01"
+            android:background="@color/DimGray" />
+
+        <TextView
+            android:id="@+id/withdraw_btn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="?attr/selectableItemBackground"
+            android:gravity="center"
+            android:text="Withdraw \npayment"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/_12sdp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonsLayout"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_20sdp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:fontFamily="@font/roboto"
+            android:text="Name"
+            android:textColor="@color/colorPrimary" />
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_margin="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:background="@drawable/round_backgroud_text"
+            android:elevation="@dimen/_5sdp"
+            android:fontFamily="@font/roboto_light"
+            android:hint="Junaid Ijaz"
+            android:paddingLeft="@dimen/_10sdp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:fontFamily="@font/roboto"
+            android:text="Rate/Hours (in pounds)"
+            android:textColor="@color/colorPrimary" />
+
+        <EditText
+            android:id="@+id/broadcasterRate"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_margin="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:background="@drawable/round_backgroud_text"
+            android:elevation="@dimen/_5sdp"
+            android:fontFamily="@font/roboto_light"
+            android:hint="30"
+            android:paddingLeft="@dimen/_10sdp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:fontFamily="@font/roboto"
+            android:text="LinkedIn Profile Link"
+            android:textColor="@color/colorPrimary" />
+
+        <EditText
+            android:id="@+id/set_linkeldn_profile_link"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_margin="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:background="@drawable/round_backgroud_text"
+            android:elevation="@dimen/_5sdp"
+            android:fontFamily="@font/roboto_light"
+            android:hint="www.linkedin.com/in/junaid"
+            android:paddingLeft="@dimen/_10sdp" />
+
+        <TextView
+            android:id="@+id/note"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginRight="@dimen/_5sdp"
+            android:fontFamily="@font/roboto"
+            android:text="How to find my linkedin username?"
+            android:textColor="@color/blue" />
+
+        <Button
+            android:id="@+id/btn_watch_video"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/go_live_button"
+            android:paddingHorizontal="10dp"
+            android:text="My Pitch Videos"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_10ssp"
+            android:textStyle="bold"
+            android:visibility="visible"
+            app:layout_constraintTop_toBottomOf="@+id/inputlayout_profile" />
+
+    </LinearLayout>
+
+</RelativeLayout>

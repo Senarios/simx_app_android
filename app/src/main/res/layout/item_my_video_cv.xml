@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable
+            name="model"
+            type="com.hdev.common.datamodels.VideoCv" />
+
+    </data>
+<com.chauthai.swipereveallayout.SwipeRevealLayout
+    android:layout_marginTop="5dp"
+    android:clickable="true"
+    android:focusable="true"
+    android:id="@+id/root"
+    app:dragEdge="right"
+    android:background="?selectableItemBackground"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/delete"
+            android:padding="10dp"
+            android:textColor="@color/white"
+            android:background="@color/Red"
+            android:gravity="center"
+            android:text="Delete"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+    <androidx.cardview.widget.CardView
+        android:layout_marginTop="5dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:id="@+id/card"
+        android:background="?selectableItemBackground"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_margin="5dp"
+            android:id="@+id/container"
+            android:layout_height="wrap_content">
+
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_width="80dp"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_height="80dp"
+                android:id="@+id/imageView"
+                loadUserImage="@{model.videocv}"
+                />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginHorizontal="10dp"
+                android:ellipsize="end"
+                app:layout_constraintLeft_toLeftOf="@+id/linearlay"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@id/imageView"
+                app:layout_constraintTop_toTopOf="parent"
+                android:singleLine="true"
+                android:text="@{model.title}"/>
+            <RelativeLayout
+                android:id="@+id/linearlay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="MissingConstraints">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:layout_alignParentRight="true"
+                    tools:ignore="MissingConstraints">
+
+                    <ImageView
+                        android:id="@+id/play_video"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:background="@drawable/button_bg"
+                        android:src="@drawable/ic_play_round" />
+
+                    <TextView
+                        android:id="@+id/apply_choosen_video"
+                        android:layout_width="@dimen/_28sdp"
+                        android:layout_height="@dimen/_22sdp"
+                        android:text="Apply"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:textSize="@dimen/_8sdp"
+                        android:layout_gravity="center_vertical"
+                        android:background="@drawable/button_bg"
+                        android:textColor="@color/white"/>
+                </LinearLayout>
+            </RelativeLayout>
+
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.cardview.widget.CardView>
+</com.chauthai.swipereveallayout.SwipeRevealLayout>
+
+</layout>

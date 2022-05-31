@@ -1,0 +1,312 @@
+<resources>
+    <string name="app_name">Scottish Health</string>
+    <string name="splash_image">Splash_Image</string>
+    <string name="capture_format_change_text">Slide to change capture format</string>
+
+    //credentials for aws
+
+
+    <!-- send email strings -->
+    <string name="admin_mail">colinjohn563@gmail.com</string>
+    <string name="admin_name">Scottish Health</string>
+    <string name="mail_title">Job Post Approval</string>
+    <string name="mail_body1">A new broadcast</string>
+    <string name="mail_body2">is pending for approval</string>
+    <!-- send email strings -->
+
+    <!-- Settings strings. -->
+
+
+    <string name="pref_resolution_default">-1</string>
+    <string name="pref_fps_key">fps_preference</string>
+    <string name="pref_fps_title">Camera fps.</string>
+    <string name="pref_fps_dlg">Enter local camera fps.</string>
+
+    <string name="pref_resolution_key">resolution_preference</string>
+    <string name="pref_resolution_title">Video resolution.</string>
+    <string name="pref_resolution_dlg">Enter RTC local video resolution.</string>
+
+    <string name="pref_fps_default">0</string>
+    <string name="pref_startbitrate_key">startbitrate_preference</string>
+    <string name="pref_startbitrate_title">Start bitrate setting.</string>
+    <string name="pref_startbitrate_dlg">Start bitrate setting.</string>
+
+    <string name="pref_startbitrate_default">Default</string>
+    <string name="pref_startbitratevalue_key">startbitratevalue_preference</string>
+    <string name="pref_startbitratevalue_title">Video encoder start bitrate.</string>
+    <string name="pref_startbitratevalue_dlg">Enter video encoder start bitrate in kbps.(Max is 2000)</string>
+
+    <string name="pref_startbitratevalue_default">1000</string>
+    <string name="pref_videocodec_key">videocodec_preference</string>
+    <string name="pref_videocodec_title">Default video codec.</string>
+    <string name="pref_videocodec_dlg">Select default video codec.</string>
+
+    <string name="pref_videocodec_default">0</string>
+    <string name="pref_hwcodec_key">hwcodec_preference</string>
+    <string name="pref_hwcodec_title">Video codec hardware acceleration.</string>
+    <string name="pref_hwcodec_dlg">Use hardware accelerated video codec (if available).</string>
+
+    <string name="pref_hwcodec_default">true</string>
+    <string name="pref_initiator_behaviour_key">initiator_as_main_preference</string>
+    <string name="pref_initiator_behaviour_title">End conference if initiator hangs up</string>
+    <string name="pref_initiator_behaviour_default">true</string>
+
+    <string name="pref_noaudioprocessing_key">audioprocessing_preference</string>
+    <string name="pref_noaudioprocessing_title">Disable audio processing.</string>
+    <string name="pref_noaudioprocessing_dlg">Disable audio processing pipeline.</string>
+
+
+    <string name="pref_noaudioprocessing_default">false</string>
+    <string name="pref_aecdump_key">aecdump_preference</string>
+    <string name="pref_aecdump_title">Create aecdump.</string>
+    <string name="pref_aecdump_dlg">Enable diagnostic audio recordings.</string>
+
+    <string name="pref_aecdump_default">false</string>
+    <string name="pref_opensles_key">opensles_preference</string>
+    <string name="pref_opensles_title">Use OpenSL ES for audio playback.</string>
+    <string name="pref_opensles_dlg">Use OpenSL ES for audio playback.</string>
+
+    <string name="pref_opensles_default">false</string>
+    <string name="pref_disable_built_in_aec_key">disable_built_in_aec_preference</string>
+    <string name="pref_disable_built_in_aec_title">Disable built-in AEC.</string>
+    <string name="pref_disable_built_in_aec_dlg">Disable built-in AEC.</string>
+
+    <string name="pref_disable_built_in_aec_default">false</string>
+    <string name="pref_tracing_key">tracing_preference</string>
+    <string name="pref_tracing_title">Debug performance tracing.</string>
+    <string name="pref_tracing_dlg">Debug performance tracing.</string>
+
+    <string name="pref_tracing_default" translatable="false">false</string>
+    <string name="pref_audiocodec_key">pref_audio_codec</string>
+    <string name="pref_audiocodec_title">Default audio codec</string>
+    <string name="pref_audiocodec_def">ISAC</string>
+
+    <string name="pref_audiocodec_dlg">Select default audio codec</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+
+    <string name="login_icon">login_icon</string>
+    <string name="login">Login</string>
+    <string name="sign_up">Don\'t have an account?</string>
+    <string name="createprofile1_complete_profile">Complete Profile</string>
+    <string name="hourly_rate_hint">100 £/hour</string>
+    <string name="profile_unselected">profile_unselected</string>
+    <string name="home_unselected">home_unselected</string>
+    <string name="notification_unselected">notification_unselected</string>
+    <string name="title_activity_home_screen_fragment">home_screen_fragment</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="please_login">Please Login</string>
+    <string name="cross_image">Cross Image</string>
+    <string name="createProfile_2_description">Hello!\nPlease add your picture or brand logo.</string>
+    <string name="setting_diaoge">This App require Camera And Storage Permissions to take your picture, Please Allow it by Tapping on Setting</string>
+    <string name="createprofile_welcome">Welcome To Scottish Health!</string>
+    <string name="mapicon">mapicon</string>
+    <string name="search_string_home">Search for a broadcaster, topic or location</string>
+    <string name="startup_partner_wanted">Startup partner wanted</string>
+    <string name="share_preview_on">Share preview on</string>
+    <string name="warninglivestream">This broadcast will be maximum 30 seconds long</string>
+    <string name="warninglivestreamforlong">This broadcast will be maximum 15 Minutes long</string>
+    <string name="incoming_call_request">incoming Call request</string>
+    <string name="muted">muted</string>
+    <string name="type_message">Type message here</string>
+    <string name="chat_attachment">Attachment</string>
+    <string name="image_name">%1$s.jpg</string>
+    <string name="don_t_worry_we_just_need_your_registered_email_address_and_its_done">We just need your registered email address and its done!</string>
+    <string name="lt_lt_go_back"><![CDATA[<< Go Back]]></string>
+    <string-array name="array_name">
+        <item>Recruiter</item>
+        <item>OpenForWork</item>
+    </string-array>
+
+
+    <string name="statuses_delivered">Delivered</string>
+    <string name="statuses_read">Read</string>
+    <string name="statuses_sent">Sent</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="simx_error">Something Went Wrong in Scottish Health, Would you like to restart Scottish Health?</string>
+    <string name="gocoder_licsensekey" translatable="false">GOSK-0E47-010C-EFCD-C8B6-7ABC</string>
+    <string name="settings">Settings</string>
+
+    <string name="faq">
+Q: What is the idea behind the app?\n
+\nA: Scottish Health is a  worldwide video only job centre. If a picture is worth a thousand words a video must be worth a million !\n
+<!--        Coaches, startups, recruiters and job hunters connect with short videos linked to their LinkedIn profile ….no cv required !! Short videos attract more interest than a digital cv and can say who you really are.. Every user can set an hourly rate to be paid for expert voice or video chat.\n-->
+<!--        Get paid for what you know !-->
+
+<!--\n\nQ: What is the unique Value Proposition for job hunters?
+\nA: Job hunters can apply for jobs by sharing their social video CV from a library that’s connected to a LinkedIn profile.  This enables them to show what they are passionate about and showcase their transferable skills…..much better than any cover letter.\n
+        They can also hire virtual coaches to help them get hired in the sustainable economy.-->
+
+
+<!--\n\nQ: How can coaches benefit?-->
+<!--\nA: Coaches can create their own broadcasting station and attract new business by sharing their passion for climate action with short videos . Coaches can also get paid in the app ( any rate they set ) for video consultations.-->
+
+\n\nQ: What’s in it for recruiters?
+\nA: Recruiters can  easily upload video job adverts in the app and share on social media ( particularly LinkedIn ) . Job advertisers can shortlist and share video applications that are connected to a LinkedIn profile. This reduces the time spent interviewing  on Zoom ,Teams or even in a bricks and mortar office. Applicant Tracking Systems cant screen for attitude !
+
+\n\nQ: What about startups?
+\nA: Startups can share their elevator pitch and advertise for co-founders or investors . They can also hire virtual coaches as well as Subject Matter Experts.
+
+<!--\n\nQ: How do virtual coaches get paid in the app?-->
+<!--\nA: Coaches choose their hourly rate and app users make an appointment to hire their video  coach, for an agreed time, without leaving Scottish Health. Payments are made in the Appstore or Play store.-->
+
+<!--\n\nQ: Do users have to charge for video consultations or video interviews?-->
+<!--\nA: No. If you are a job hunter or startup founder you will want to offer free video calls to potential recruiters or investors.  Set your rate to £0.-->
+
+\n\nQ: How can users find my videos?
+A: Any app user can do a YouTube like video search under job title or using # for key words in Tags.  If you have enabled location they can also find you on the GPS map .
+
+\n\nQ: How can users contact me?
+\nA: Anyone can contact you via instant messaging, voice or video calls in the app.
+
+<!--\n\nQ: How do job hunters and founders pay for video consultations?-->
+<!--\nA: Consultations are paid for by purchasing credits from the App Store or Play Store.-->
+
+\n\nQ: Can I use the app if I don’t want to share my location in the GPS map ?
+\nA: Yes !  Your videos then appear as an icon somewhere on the equator .
+
+
+\n\nQ: Can I livestream a webinar?
+\nA: Yes when you create your pitch choose the livestream icon . All users in the app will be able to watch your broadcast and make comments that appear on the screen of your phone .
+
+\n\nQ: I still have questions
+\nA: Please mail cj@hydrogenenterprise.com
+</string>
+    <string name="terms_condition">
+        1. Who May Use the Services You may use the Services only if you agree to form a binding contract with Scottish Health and are not a person barred from receiving services under the laws of the applicable jurisdiction. In any case, you must be at least 16 years old, to use the Services. If you are accepting these Terms and using the Services on behalf of a company, organization, government, or other legal entity, you represent and warrant that you are authorized to do so and have the authority to bind such entity to these Terms, in which case the words “you” and “your” as used in these Terms shall refer to such entity.
+\n\n2. Privacy
+Our Privacy Policy describes how we handle the information you provide to us when you use our Services. You understand that through your use of the Services you consent to the collection and use (as set forth in the Privacy Policy) of this information.
+\n\n3. Content on the Services
+You are responsible for your use of the Services and for any Content you provide, including compliance with applicable laws, rules, and regulations. You should only provide Content that you are comfortable sharing with others.
+Any use or reliance on any Content or materials posted via the Services or obtained by you through the Services is at your own risk. We do not endorse, support, represent or guarantee the completeness, truthfulness, accuracy, or reliability of any Content or communications posted via the Services or endorse any opinions expressed via the Services. You understand that by using the Services, you may be exposed to Content that might be offensive, harmful, inaccurate or otherwise inappropriate, or in some cases, postings that have been mislabeled or are otherwise deceptive. All Content is the sole responsibility of the person who originated such Content. We may not monitor or control the Content posted via the Services and, we cannot take responsibility for such Content.
+We reserve the right to remove Content that violates the User Agreement, including for example, copyright or trademark violations, impersonation, unlawful conduct,or harassment.Your Rights and Grant of Rights in the Content
+You retain your rights to any Content you submit, post or display on or through the Services. What’s yours is yours — you own your Content (and your incorporated audio, photos and videos are considered part of the Content).
+By submitting, posting or displaying Content on or through the Services, you grant us a worldwide, non-exclusive, royalty-free license (with the right to sublicense) to use, copy, reproduce, process, adapt, modify, publish, transmit, display and distribute such Content in any and all media or distribution methods (now known or later developed). This license authorizes us to make your Content available to the rest of the world and to let others do the same. You agree that this license includes the right for Scottish Health to provide, promote, and improve the Services and to make Content submitted to or through the Services available to other companies, organizations or individuals for the syndication, broadcast, distribution, promotion or publication of such Content on other media and services, subject to our terms and conditions for such Content use. Such additional uses by Scottish Health, or other companies, organizations or individuals, may be made with no compensation paid to you with respect to the Content that you submit, post, transmit or otherwise make available through the Services.
+Scottish Health has an evolving set of rules for how ecosystem partners can interact with your Content on the Services. These rules exist to enable an open ecosystem with your rights in mind. You understand that we may modify or adapt your Content as it is distributed, syndicated, published, or broadcast by us and our partners and/or make changes to your Content in order to adapt the Content to different media.
+You represent and warrant that you have, or have obtained, all rights, licenses, consents, permissions, power and/or authority necessary to grant the rights granted herein for any Content that you submit, post or display on or through the Services. You agree that such Content will not contain material subject to copyright or other proprietary rights, unless you have necessary permission or are otherwise legally entitled to post the material and to grant Scottish Health the license described above.
+\n\n4. Using the Services
+Our Services evolve constantly. As such, the Services may change from time to time, at our discretion. We may stop (permanently or temporarily) providing the Services or any features within the Services to you or to users generally. We also retain the right to create limits on use and storage at our sole discretion at any time. We may also remove or refuse to distribute any Content on the Services, suspend or terminate users, and reclaim usernames without liability to you.
+In consideration for Scottish Health granting you access to and use of the Services, you agree that Scottish Health and its third-party providers and partners may place advertising on the Services or in connection with the display of Content or information from the Services whether submitted by you or others. You also agree not to misuse our Services, for example, by interfering with them or accessing them using a method other than the interface and the instructions that we provide. You may not do any of the following while accessing or using the Services: \n(i) access, tamper with, or use non-public areas of the Services, Scottish Health’s computer systems, or the technical delivery systems of Scottish Health’s providers; \n(ii) probe, scan, or test the vulnerability of any system or network or breach or circumvent any security or authentication measures; \n(iii) access or search or attempt to access or search the Services by any means (automated or otherwise) other than through our currently available, published interfaces that are provided by Scottish Health (and only pursuant to the applicable terms and conditions), unless you have been specifically allowed to do so in a separate agreement with Scottish Health (NOTE: crawling the Services is permissible if done in accordance with the provisions of the robots.txt file, however, scraping the Services without the prior consent of Scottish Health is expressly prohibited); \n(iv) forge any TCP/IP packet header or any part of the header information in any email or posting, or in any way use the Services to send altered, deceptive or false source-identifying information; or \n(v) interfere with, or disrupt, (or attempt to do so), the access of any user, host or network, including, without limitation, sending a virus, overloading, flooding, spamming, mail-bombing the Services, or by scripting the creation of Content in such a manner as to interfere with or create an undue burden on the Services. We also reserve the right to access, read, preserve, and disclose any information as we reasonably believe is necessary to \n(i) satisfy any applicable law, regulation, legal process or governmental request, \n(ii) enforce the Terms, including investigation of potential violations hereof, \n(iii) detect, prevent, or otherwise address fraud, security or technical issues, \n(iv) respond to user support requests, or \n(v) protect the rights, property or safety of Scottish Health, its users and the public. Scottish Health does not disclose personally-identifying information to third parties except in accordance with our Privacy Policy.
+Your Account
+You may need to create an account to use some of our Services. You are responsible for safeguarding your account, so use a strong password and limit its use to this account. We cannot and will not be liable for any loss or damage arising from your failure to comply with the above.
+You can control most communications from the Services. We may need to provide you with certain communications, such as service announcements and administrative messages. These communications are considered part of the Services and your account, and you may not be able to opt-out from receiving them..
+Your License to Use the Services
+Scottish Health gives you a personal, worldwide, royalty-free, non-assignable and non-exclusive license to use the software provided to you as part of the Services. This license has the sole purpose of enabling you to use and enjoy the benefit of the Services as provided by Scottish Health, in the manner permitted by these Terms.
+Nothing in the Terms gives you a right to use the Scottish Health name or any of the Scottish Health trademarks, logos, domain names, and other distinctive brand features. All right, title, and interest in and to the Services (excluding Content provided by users) are and will remain the exclusive property of Scottish Health and its licensors. Any feedback, comments, or suggestions you may provide regarding Scottish Health, or the Services is entirely voluntary and we will be free to use such feedback, comments or suggestions as we see fit and without any obligation to you.
+Ending These Terms
+You may end your legal agreement with Scottish Health at any time by deactivating your accounts and discontinuing your use of the Services. We may suspend or terminate your account or cease providing you with all or part of the Services at any time for any or no reason, including, but not limited to, if we reasonably believe: \n(i) you have violated these Terms or , \n(ii) you create risk or possible legal exposure for us; \n(iii) your account should be removed due to prolonged inactivity; or \n(iv) our provision of the Services to you is no longer commercially viable. We will make reasonable efforts to notify you by the account associated with your account or the next time you attempt to access your account,depending on the circumstances. In all such cases, the Terms shall terminate, including, without limitation, your license to use the Services, except that the following sections shall continue to apply: II, III, V, and VI. 
+\n\n5. Disclaimers and Limitations of Liability
+The Services are Available "AS-IS"
+Your access to and use of the Services or any Content are at your own risk. You understand and agree that the Services are provided to you on an “AS IS” and “AS AVAILABLE” basis. The “Scottish Health Entities” refers to Scottish Health, its parents, affiliates, related companies, officers, directors, employees, agents, representatives, partners, and licensors. Without limiting the foregoing, to the maximum extent permitted under applicable law, THE Scottish Health ENTITIES DISCLAIM ALL WARRANTIES AND CONDITIONS, WHETHER EXPRESS OR IMPLIED, OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, OR NON-INFRINGEMENT. The Scottish Health Entities make no warranty or representation and disclaim all responsibility and liability for: \n
+        \n(i) the completeness, accuracy, availability, timeliness, security or reliability of the Services or any Content; \n(ii) any harm to your computer system, loss of data, or other harm that results from your access to or use of the Services or any Content; \n(iii) the deletion of, or the failure to store or to transmit, any Content and other communications maintained by the Services; and \n(iv) whether the Services will meet your requirements or be available on an uninterrupted, secure, or error-free basis. No advice or information, whether oral or written, obtained from the Scottish Health Entities or through the Services, will create any warranty or representation not expressly made herein.
+Limitation of Liability
+TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, THE Scottish Health ENTITIES SHALL NOT BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL OR PUNITIVE DAMAGES, OR ANY LOSS OF PROFITS OR REVENUES, WHETHER INCURRED DIRECTLY OR INDIRECTLY, OR ANY LOSS OF DATA, USE, GOODWILL, OR OTHER INTANGIBLE LOSSES, RESULTING FROM \n(i) YOUR ACCESS TO OR USE OF OR INABILITY TO ACCESS OR USE THE SERVICES; \n(ii) ANY CONDUCT OR CONTENT OF ANY THIRD PARTY ON THE SERVICES, INCLUDING WITHOUT LIMITATION, ANY DEFAMATORY, OFFENSIVE OR ILLEGAL CONDUCT OF OTHER USERS OR THIRD PARTIES; \n(iii) ANY CONTENT OBTAINED FROM THE SERVICES; OR \n(iv) UNAUTHORIZED ACCESS, USE OR ALTERATION OF YOUR TRANSMISSIONS OR CONTENT. IN NO EVENT SHALL THE AGGREGATE LIABILITY OF THE Scottish Health ENTITIES EXCEED THE GREATER OF ONE HUNDRED U.S. DOLLARS (U.S. $100.00) OR THE AMOUNT YOU PAID Scottish Health, IF ANY, IN THE PAST SIX MONTHS FOR THE SERVICES GIVING RISE TO THE CLAIM. THE LIMITATIONS OF THIS SUBSECTION SHALL APPLY TO ANY THEORY OF LIABILITY, WHETHER BASED ON WARRANTY, CONTRACT, STATUTE, TORT (INCLUDING NEGLIGENCE) OR OTHERWISE, AND WHETHER OR NOT THE Scottish Health ENTITIES HAVE BEEN INFORMED OF THE POSSIBILITY OF ANY SUCH DAMAGE, AND EVEN IF A REMEDY SET FORTH HEREIN IS FOUND TO HAVE FAILED OF ITS ESSENTIAL PURPOSE.
+\n\n6. General
+We may revise these Terms from time to time. The changes will not be retroactive, and the most current version of the Terms, will govern our relationship with you. We will try to notify you of material revisions, for example via a service notification or social media associated with your account. By continuing to access or use the Services after those revisions become effective, you agree to be bound by the revised Terms.
+The laws of the England , will govern these Terms and any dispute that arises between you and Scottish Health
+In the event that any provision of these Terms is held to be invalid or unenforceable, then that provision will be limited or eliminated to the minimum extent necessary, and the remaining provisions of these Terms will remain in full force and effect. Scottish Health’s failure to enforce any right or provision of these Terms will not be deemed a waiver of such right or provision.
+These Terms are an agreement between you and Scottish Health a trading division of Scottish Health ltd  Effective: August 31, 2018
+  </string>
+    <string name="privacy_policy">
+Privacy statement:
+Scottish Health understands that your privacy is important to you. We are committed to respecting your privacy and protecting your personal data, which is any information that is capable of identifying you as an individual person, collected via all websites post a link to this Privacy Policy (collectively, “the Sites”). This Privacy Policy describes how we handle and protect your personal data in connection with the Sites, in our capacity as data controllers.\n\n
+        Information we collect:
+Scottish Health collects personal data on certain areas of the Sites when you register for or apply for jobs. The personal data collected varies across the Sites and may include information that you provide, such as your name, mailing address, e-mail address, telephone number, and background information required to apply for a job. Only Scottish Health or its agents will contact you using this e-mail address. We will send e-mails to this address related to your registration.
+
+\n\nUse of information:
+The personal data we collect may be used where we have your specific consent to do so, or where Scottish Health has a legitimate interest in or other legal basis for processing such information. In some situations, the collection of personal data may be required for the operation of the Sites or to provide certain services or products. Scottish Health uses your personal data to fulfil your requests for information, personalise content that you view or receive on the Sites, evaluate and improve our services, recruit and evaluate job applicants, analyse the Sites’ performance and functioning, prevent fraud, enforce our terms of use, comply with all applicable laws and corporate reporting obligations, enforce Scottish Health agreements, and accomplish other purposes you may initiate or request. We may keep any of your personal data on file and use it to contact you.
+Our Sites do not collect personal data about your online activities over time and across third party websites or online services. Therefore, “do not track” signals transmitted from web browsers do not apply to our Sites, and we do not alter any of our data collection and use practices upon receipt of such a signal.
+
+\n\nData recipients:
+Scottish Health will not intentionally disclose or transfer (and will take reasonable steps to prevent the unauthorised or accidental disclosure of) your personal data to third parties without your consent, whether for such third parties’ own marketing purposes or otherwise, except as follows. Scottish Health may provide access to your personal data to third party service providers engaged by Scottish Health to provide services related to the Sites, provided that such third- party service providers will first agree to maintain the strict confidentiality of such information and provide the same level of data security as provided by Scottish Health.
+We also may share your personal data with third party service providers who perform services and functions on our behalf to support our interactions with you, including, for example, processing recruitment materials, administering surveys or contests, or communicating with you. These third party service providers are not permitted to use or disclose your personal data except as necessary to perform services on our behalf or to comply with legal requirements.
+In addition, we may disclose information about you:
+\n♣	If we are required to do so by law or legal process;
+\n♣	To law enforcement authorities or other government officials;
+\n♣	When we believe disclosure is necessary or appropriate to prevent physical harm or financial loss or in connection with an investigation of suspected or actual illegal activity;
+\n♣	If disclosure is necessary to protect the vital interests of a person;
+\n♣	To enforce our terms of use;
+\n♣	To protect our property, services and legal rights;
+\n♣	To prevent fraud against Privacy Auditors, our subsidiaries, affiliates and/or business partners;
+\n♣	To support auditing, compliance, and corporate governance functions; or
+\n♣	To comply with any and all applicable laws.
+
+\nWe maintain processes designed to ensure that any processing of personal data by third party service providers is consistent with this Privacy Policy and protects the confidentiality, availability, and integrity of your personal data.
+In addition, we may disclose or transfer your personal data in the event of a re-organisation, merger, sale, joint venture, assignment, or other transfer or disposition of all or any portion of our business.
+
+\n\nUser forums:
+You should be aware that whenever you publicly disclose information online, that information could be collected and used by others. Scottish Health is not responsible for any action or policies of any third parties who collect information that users publicly disclose in any such forums on the Sites.
+
+
+\n\nLink to third-party sites:
+Scottish Health may provide links to third-party websites or information as a service to our users. If you use these links, you will leave the Sites. Such links do not constitute or imply an endorsement, sponsorship, or recommendation by Scottish Health of the third party, the third- party website, or the information contained therein, and Scottish Health shall not be responsible or liable for your use thereof. Such use shall be subject to the terms of use and privacy policies applicable to those sites.
+
+
+\n\nSocial Networking:
+The Sites may allow you sign into and associate your social network accounts including, but not limited to, Twitter, LinkedIn, Facebook, and YouTube, with Privacy Auditors.
+By using this functionality, you give us permission to access all of the elements of your social network profile information that you have made available to be shared and to use it in accordance with the social network’s terms of use and this Privacy Policy. Please refer to the privacy settings in your social network account for information about what data is shared with Scottish Health and other connected applications and to manage the data that is shared through your account, including information about your activities using our Sites.
+If you would like to disconnect a social media account from us, refer to the settings of that social network account and its provider.
+
+\n\nSecurity:
+Scottish Health has implemented generally accepted standards of technology and operational security to protect personal data from loss, misuse, alteration, or destruction. Only authorised Scottish Health personnel and third party service providers are provided access to personal data, and these employees and service providers are required to treat this information as confidential. Despite these precautions however, Scottish Health cannot guarantee that unauthorised persons will not obtain access to your personal data.
+
+
+\n\nData retention policy:
+Scottish Health retains personal data, as necessary, for the duration of the relevant business relationship. We may also retain personal data for longer than the duration of the business relationship should we need to retain it to protect ourselves against legal claims, use it for analysis or historical record-keeping, or comply with our information management policies and schedules. If you request that we delete your personal data, Scottish Health will make reasonable attempts to delete all instances of the information in their entirety. For requests for access, corrections, or deletion, please refer to the “Your Rights” section of this Privacy Policy.
+
+
+\n\nChildren:
+The Sites are not designed for or directed at children 13 years of age or younger, and Scottish Health does not intentionally collect or maintain personal data about anyone under this age.
+
+
+\n\nYour rights:
+Where granted by local law, you may have the right to request access to the personal data that we have collected about you for the purposes of reviewing, modifying, or requesting deletion of the data. You may also have the right to request a copy of the personal data that we have collected about you and to have any inaccuracies in that data corrected. In certain circumstances, you may also request that we cease processing your personal data.
+If you would like to make a request to access, review, or correct the personal data we have collected about you, or to discuss how we process your personal data, please contact us .To help protect your privacy and security, we will take reasonable steps to verify your identity, such as requiring a password and user ID, before granting access to your personal data. We will make reasonable attempts to promptly investigate, comply with, or otherwise respond to your requests as may be required by applicable law. Different laws may prevent us from providing access to your personal data or otherwise fully complying with your request depending upon the circumstances and the request, such as for example, where producing your information may reveal the identity of someone else. We reserve the right to charge an appropriate fee for complying with your request where allowed by applicable law, and/or deny your requests where they may be manifestly unfounded, and/or excessive, or otherwise objectionable or unwarranted under applicable law.
+In addition, and where granted by local law, you have the legal right to lodge a complaint with a competent data protection authority.
+You may also unsubscribe from mailing lists or any registrations on any of the Sites. To do so, please either follow instructions on the page of the Site on which you have provided such information, subscribed or registered or contact us at the address provide at the bottom of this Privacy Policy.
+
+\n\nConsent; changes to Privacy Policy:
+By using the Sites, you consent to the collection, use, and storage of your personal data by us in the manner described in this Privacy Policy and elsewhere on the Sites. We reserve the right to make changes to this Privacy Policy from time to time. We will alert you to any such changes by updating this Privacy Policy. If we make material changes to this Privacy Policy that increase our rights to use personal data that we have previously collected about you, we will obtain your consent either through an email to your registered email address or by prominently posting information about the changes on our Sites.
+
+
+\n\nCONTACT:
+If you have any questions about this Privacy Policy, our Privacy Notice or if you require any assistance in navigating or reading the content on Privacy Auditors ltd/ Scottish Health sites, please contact .
+cjr@utsimx.co.uk
+
+\n\Scottish Health reserves the right to modify this Privacy Policy. We will post any changes to our Privacy Policy on this page.
+
+
+ </string>
+    <string name="faq_s">FAQ\'s</string>
+    <string name="terms_and_condition">Terms And Condition</string>
+<!--    <string name="hyperlinksignup">By clicking next button you are accepting our \n<a href="https://h2startup.com/termsAndConditions.html"><font color="green">terms and conditions</font></a></string>-->
+    <string name="tv_privacy_policy">Privacy Policy</string>
+    <string name="connect_twitter">Please connect your twitter account by going to edit profile!</string>
+    <string name="channel_name">SimX</string>
+    <string name="channel_description">Upload File Notifications</string>
+    <string name="message_low_balance">You have Insufficient Balance to make this call, do you want to recharge your account right now?</string>
+
+    <string name="linkedin_link">https://www.linkedin.com/in/</string>
+
+    <string-array name="spinner_time">
+        <item>15 Minutes</item>
+        <item>30 Minutes</item>+
+        <item>45 Minutes</item>
+        <item>60 Minutes</item>
+
+    </string-array>
+
+    <string name="product_one">product_01</string>
+    <string name="product_two">product_02</string>
+    <string name="product_three">product_03</string>
+    <string name="rateText">Get paid for coaching, mentoring or subject matter expertise. Make your rate €0 if you are a job advertiser or seeking help for your startup. App users can call or message you. No charge\nCoaches and advisors :\nplease set your own hourly rate for video consultations. But make it competitive 😀</string>
+    <string name="videoItemText">To apply please upload and share a short video with the advertiser ( 60 seconds or less ) No cv required 😀 Users can easily view your Linkedin profile in the app</string>
+    <string name="already_registered_login_me">Already registered.</string>
+    <string name="not_exist_post">This post doesn\'t exist anymore.</string>
+    <string name="title_my_applications">My Applications</string>
+</resources>

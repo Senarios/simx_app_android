@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/videoCV"
+        android:title="Watch CV"
+        />
+    <item
+        android:id="@+id/share"
+        android:title="Share CV"
+        />
+    <item
+        android:id="@+id/shortlist"
+        android:title="Shortlist"
+        />
+
+    <item
+        android:id="@+id/remove"
+        android:title="Remove CV"
+        />
+
+
+
+
+</menu>

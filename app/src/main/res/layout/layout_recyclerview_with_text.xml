@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:visibility="gone"
+            android:src="@drawable/simxbg"
+            android:scaleType="centerCrop"
+            android:layout_width="@dimen/_200sdp"
+            android:layout_height="@dimen/_300sdp"
+            android:layout_centerInParent="true"
+            android:id="@+id/pic_cv_img"
+            />
+        <TextView
+            android:id="@+id/tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_50sdp"
+            android:padding="@dimen/_10sdp"
+            android:text="@string/videoItemText"
+            android:textSize="@dimen/_10sdp" />
+
+        <RadioButton
+            android:id="@+id/apply_by_pic_cv"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_below="@+id/tv"
+            android:layout_marginStart="@dimen/_6sdp"
+            android:checked="true"
+            android:text="Apply by picture cv" />
+        <TextView
+            android:id="@+id/pictv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/apply_by_pic_cv"
+            android:padding="@dimen/_10sdp"
+            android:text="If you are not ready to share a video please share a picture of the first page of your cv or resume showing your most recent jobs"
+            android:textSize="@dimen/_10sdp" />
+        <RadioButton
+            android:id="@+id/apply_by_vid_cv"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="@dimen/_6sdp"
+            android:layout_below="@+id/pictv"
+            android:text="Apply by video cv" />
+        <TextView
+            android:id="@+id/vidtv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/apply_by_vid_cv"
+            android:padding="@dimen/_10sdp"
+            android:text="Share a maximum 60 second video clip with the recruiter and make it authentic 😀\nOnly the recruiter can view your application .You  can delete your video application at any time"
+            android:textSize="@dimen/_10sdp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@id/recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/vidtv"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_width="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" />
+    </RelativeLayout>
+</layout>

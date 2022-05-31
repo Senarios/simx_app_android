@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<data>
+
+</data>
+    <merge android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.ogaclejapan.smarttablayout.SmartTabLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_centerHorizontal="true"
+            android:background="@color/colorPrimary"
+            app:stl_indicatorAlwaysInCenter="true"
+            app:stl_indicatorWithoutPadding="false"
+            app:stl_indicatorInFront="false"
+            app:stl_indicatorInterpolation="smart"
+            app:stl_indicatorGravity="bottom"
+            app:stl_indicatorColor="@color/white"
+            app:stl_indicatorThickness="2dp"
+            app:stl_indicatorWidth="auto"
+            app:stl_indicatorCornerRadius="2dp"
+            app:stl_overlineColor="#4D000000"
+            app:stl_overlineThickness="0dp"
+            app:stl_underlineColor="#4D000000"
+            app:stl_underlineThickness="1dp"
+            app:stl_dividerColor="#4D000000"
+            app:stl_dividerThickness="0dp"
+            app:stl_defaultTabBackground="?attr/selectableItemBackground"
+            app:stl_defaultTabTextAllCaps="false"
+            app:stl_defaultTabTextColor="@color/white"
+            app:stl_defaultTabTextHorizontalPadding="16dp"
+            app:stl_defaultTabTextMinWidth="0dp"
+            app:stl_distributeEvenly="false"
+            app:stl_clickable="true"
+            app:stl_titleOffset="24dp"
+            app:stl_drawDecorationAfterTab="false"
+            android:id="@+id/tabs"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+        <com.hdev.common.CustomViewPager
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/view_pager"
+            app:layout_constraintTop_toBottomOf="@id/tabs"
+            app:layout_constraintBottom_toBottomOf="parent"
+            />
+
+    </merge>
+</layout>

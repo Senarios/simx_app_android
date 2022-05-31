@@ -1,0 +1,54 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+    repositories {
+        google()
+        jcenter()
+        mavenCentral()
+        maven{url "https://maven.google.com"}
+        maven { url "https://jitpack.io" }
+        maven {
+            url 'https://maven.fabric.io/public'
+        }
+        maven {
+            url 'https://dl.bintray.com/greenfrvr/maven/'
+        }
+
+
+        
+    }
+    dependencies {
+        classpath 'com.google.gms:google-services:4.3.3'
+        classpath 'com.android.tools.build:gradle:4.0.1'
+        classpath 'com.jakewharton:butterknife-gradle-plugin:10.0.0'
+
+        // Add dependency
+        classpath 'io.fabric.tools:gradle:1.31.2'  // Crashlytics plugin
+
+
+        
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+        maven{url "https://maven.google.com"}
+        maven {
+            url "https://github.com/QuickBlox/quickblox-android-sdk-releases/raw/master/"
+        }
+        maven { url 'https://jitpack.io'
+        }
+//        maven {
+//            url 'https://dl.bintray.com/greenfrvr/maven/'
+//        }
+    }
+
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout>
+    <data>
+
+
+    </data>
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipe"
+        android:background="@color/LightGrey"
+        android:theme="@style/Material"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".activities.MyVideoCVActivity">
+        <androidx.coordinatorlayout.widget.CoordinatorLayout
+            android:layout_width="match_parent"
+            android:id="@+id/root"
+            android:layout_height="match_parent">
+            <com.google.android.material.appbar.AppBarLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <com.google.android.material.appbar.MaterialToolbar
+                    android:layout_width="match_parent"
+                    app:menu="@menu/video_cv_menu"
+                    android:id="@+id/toolbar"
+                    android:background="@color/primary"
+                    app:layout_scrollFlags="scroll|enterAlways|snap"
+                    app:title="Select your elevator pitch"
+                    app:subtitle="or upload and share new"
+                    app:subtitleTextColor="@color/white"
+                    app:titleTextAppearance="@style/VideoCV.TitleText"
+                    app:titleTextColor="@color/white"
+                    app:navigationIcon="@drawable/ic_arrow_back_white"
+                    android:layout_height="wrap_content"/>
+
+            </com.google.android.material.appbar.AppBarLayout>
+
+           <include
+               android:id="@+id/content"
+               layout="@layout/layout_recyclerview_with_text"
+               app:layout_behavior="@string/appbar_scrolling_view_behavior"
+               />
+
+            <include
+                android:id="@+id/bottomsheet"
+                layout="@layout/layout_bottom_sheet"
+               />
+
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+</layout>
+

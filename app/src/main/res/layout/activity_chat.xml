@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="user"
+            type="com.hdev.common.datamodels.Users" />
+    </data>
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipe"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <RelativeLayout
+            android:id="@+id/layout_chat_container"
+            style="@style/MatchParent"
+            tools:ignore="RtlHardcoded">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:orientation="horizontal"
+                android:visibility="gone"
+
+                android:weightSum="2">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/opponent_image"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:layout_weight="0.2"
+                    android:src="@drawable/boy_profilepic3x" />
+
+                <TextView
+                    android:id="@+id/opponent_name"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1.6"
+                    android:gravity="center_vertical"
+                    android:text=""
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                    android:textColor="@color/primary"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/topbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:elevation="@dimen/_5sdp"
+                android:gravity="center_vertical" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/list_chat_messages"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/divider_chat"
+                android:layout_below="@id/topbar" />
+
+
+            <View
+                android:id="@+id/divider_chat"
+                style="@style/HorizontalDividerStyle"
+                android:layout_above="@+id/layout_chat_send_container" />
+
+            <ProgressBar
+                android:id="@+id/progress_chat"
+                style="@style/CenterProgressBarStyle"
+                android:visibility="gone" />
+
+
+            <LinearLayout
+                android:id="@+id/layout_chat_send_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:padding="@dimen/_5sdp">
+
+                <ImageButton
+                    android:id="@+id/button_chat_attachment"
+                    style="@style/BorderlessImageButtonStyle"
+                    android:layout_gravity="center_vertical"
+                    android:contentDescription="TODO"
+                    android:onClick="onAttachmentsClick"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:src="@drawable/ic_action_attachment" />
+
+                <EditText
+                    android:id="@+id/edit_chat_message"
+                    style="@style/WeightWidth"
+                    android:layout_height="wrap_content"
+                    android:autofillHints="text"
+                    android:backgroundTint="@color/transparent"
+                    android:fontFamily="@font/roboto_light"
+                    android:hint="@string/type_message"
+                    android:inputType="textShortMessage|textCapSentences"
+                    android:maxLength="1024"
+                    android:textSize="@dimen/_12sdp" />
+
+                <ImageButton
+                    android:id="@+id/button_chat_send"
+                    style="@style/BorderlessImageButtonStyle"
+                    android:layout_gravity="center_vertical"
+                    android:contentDescription="TODO"
+                    android:onClick="onSendChatClick"
+                    android:paddingRight="@dimen/_5sdp"
+                    android:src="@drawable/ic_send"
+                    android:text=""
+                    android:tint="@color/colorPrimary" />
+            </LinearLayout>
+        </RelativeLayout>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+</layout>

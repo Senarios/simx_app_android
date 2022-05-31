@@ -1,0 +1,333 @@
+<layout>
+
+    <data>
+
+    </data>
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:theme="@style/Material">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.Toolbar
+                    android:id="@+id/toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/primary"
+                    app:navigationIcon="@drawable/ic_arrow_back_white"
+                    app:subtitle="Current Credits 50.0"
+                    app:subtitleTextColor="@color/white"
+                    app:title="Withdraw payment"
+                    app:titleTextColor="@color/white" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:alpha="0.8"
+                    android:textSize="@dimen/_12ssp"
+                    android:fontFamily="@font/roboto_light"
+                    android:background="?android:selectableItemBackground"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:text="Of course you want to get paid, so please make sure that the details bellow are correct. \n \nYou will normally receive payment within 45 working days ,or as soon as Apply pay or Google Pay send funds to Scottish Health.."
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textColor="@color/text_color_black"
+                    app:layout_constraintBottom_toTopOf="@id/btn_send_payment"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:fontFamily="@font/roboto"
+                    android:text="Payment details"
+                    android:textColor="@color/Black"
+                    android:textSize="@dimen/_15ssp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="Bank Name"
+                    android:fontFamily="@font/roboto"
+                    android:textColor="@color/Black"
+                    android:textStyle="bold" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/input_bank_name"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:hint="Name of your bank"
+                    app:boxStrokeColor="@color/primary">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/bank_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_light"
+                        android:singleLine="true" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="Payee name/Title"
+                    android:fontFamily="@font/roboto"
+                    android:textColor="@color/Black"
+                    android:textStyle="bold" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/input_payee_name"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:hint="Account holder name"
+                    app:boxStrokeColor="@color/primary">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/payee_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_light"
+                        android:singleLine="true" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="Bank Account Number ( 9-18 )"
+                    android:textColor="@color/Black"
+                    android:fontFamily="@font/roboto"
+                    android:textStyle="bold" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/input_accountNo"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:hint="Your bank account number"
+                    app:boxStrokeColor="@color/primary">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/accountNo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_light"
+                        android:singleLine="true" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="IBAN  (without spaces)"
+                    android:fontFamily="@font/roboto"
+                    android:textColor="@color/Black"
+                    android:textStyle="bold" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/input_iban_number"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:hint="IBAN Number"
+                    android:visibility="visible"
+                    app:boxStrokeColor="@color/primary">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/iban"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_light"
+                        android:singleLine="true" />
+
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <!--    <TextView-->
+                <!--        android:layout_width="wrap_content"-->
+                <!--        android:layout_height="wrap_content"-->
+                <!--        android:layout_margin="10dp"-->
+                <!--        android:text="Paypal"-->
+                <!--        android:textStyle="bold"-->
+                <!--        android:textColor="@color/Black"-->
+                <!--        />-->
+
+                <!--    <com.google.android.material.textfield.TextInputLayout-->
+                <!--        android:layout_margin="10dp"-->
+                <!--        android:hint="Email"-->
+                <!--        android:id="@+id/input_email"-->
+                <!--        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"-->
+                <!--        app:boxStrokeColor="@color/primary"-->
+                <!--        android:layout_width="match_parent"-->
+                <!--        android:layout_height="wrap_content">-->
+
+                <!--        <com.google.android.material.textfield.TextInputEditText-->
+                <!--            android:layout_width="match_parent"-->
+                <!--            android:layout_height="wrap_content"-->
+                <!--            android:id="@+id/email"-->
+                <!--            android:singleLine="true"-->
+                <!--            />-->
+
+                <!--    </com.google.android.material.textfield.TextInputLayout>-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="Sort code ( 00-00-00 )"
+                    android:fontFamily="@font/roboto"
+                    android:textColor="@color/Black"
+                    android:textStyle="bold" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/input_sortCode"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:hint="Sort code"
+                    android:visibility="visible"
+                    app:boxStrokeColor="@color/primary">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/sortCode"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:maxLength="8"
+                        android:fontFamily="@font/roboto_light"
+                        android:singleLine="true" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="BIC (optional)"
+                    android:fontFamily="@font/roboto"
+                    android:textColor="@color/Black"
+                    android:textStyle="bold" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/input_bic"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:hint="BIC code"
+                    android:visibility="visible"
+                    app:boxStrokeColor="@color/primary">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/bic"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_light"
+                        android:singleLine="true" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="Phone number"
+                    android:fontFamily="@font/roboto"
+                    android:textColor="@color/Black"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_43ssp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/round_backgroud_white"
+                    android:orientation="horizontal"
+                    android:weightSum="5">
+
+
+                    <com.hbb20.CountryCodePicker
+                        android:id="@+id/countryCodePicker"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/_30ssp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/_3ssp"
+                        android:layout_weight="2"
+                        app:ccp_autoDetectCountry="true"
+                        style="@style/AppTheme"
+                        app:ccp_contentColor="@color/black" />
+
+                    <EditText
+                        android:id="@+id/phoneNo"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/_30ssp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/_5ssp"
+                        android:layout_marginRight="@dimen/_5ssp"
+                        android:layout_weight="3"
+                        android:fontFamily="@font/roboto_light"
+                        android:background="@android:color/transparent"
+                        android:hint="Number"
+                        android:maxLength="10"
+                        android:inputType="number"
+                        android:textSize="@dimen/_12ssp" />
+
+                </LinearLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:alpha="0.8"
+                    android:background="?android:selectableItemBackground"
+                    android:clickable="true"
+                    android:fontFamily="@font/roboto_light"
+                    android:focusable="true"
+                    android:textSize="@dimen/_12sdp"
+                    android:text="This will be subjected to a transaction fee of 15%."
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textColor="@color/Red"
+                    app:layout_constraintBottom_toTopOf="@id/btn_send_payment"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+
+                    />
+
+                <Button
+                    android:id="@+id/btn_send_payment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="30sp"
+                    android:background="@drawable/go_live_button"
+                    android:paddingHorizontal="20dp"
+                    android:text="Send Payment"
+                    android:textColor="@color/white"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</layout>
+
